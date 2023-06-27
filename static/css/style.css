@@ -13,6 +13,8 @@ body {
   font-size: 41.6px;
 }
 
+
+
 a,
 a:visited,
 a:active {
@@ -25,11 +27,10 @@ a:hover {
 }
 
 .title {
-  margin: auto;
+  /* margin: auto; */
   text-align: right;
   font-size: 35px;
   padding-top: 5%;
-  padding-right: 60.6%;
   color: #ff8080;
   font-weight: 100;
 }
@@ -38,7 +39,7 @@ a:hover {
   margin: auto;
   width: 75%;
   display: grid;
-  grid-template-columns: 3fr 5fr;
+  grid-template-columns: 2fr 6fr;
   grid-column-gap: 5%;
 }
 
