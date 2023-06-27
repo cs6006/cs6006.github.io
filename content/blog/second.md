@@ -1,6 +1,5 @@
 +++
-title = "My second post"
-date = 2019-11-28
+title = "explain it like i'm six"
+date = 2023-01-02
 +++
-
-This is my second blog post.
+baz

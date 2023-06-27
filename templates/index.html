@@ -1,8 +1,342 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  This is my blog made with Zola.
-</h1>
-<p>Click <a href="{{ get_url(path='@/blog/_index.md') }}">here</a> to see my posts.</p>
+
+<body>
+
+  <div class="title" id="name">
+    <p> Anshuman Mohan </p>
+  </div>
+
+  <div class="grid">
+    <div class="bio info">
+      <p> <img class="resize" src={{ get_url(path="img/anshuman-cold-color.jpg" )}} alt="Anshuman Mohan is Cold"
+          width="340px"> </p>
+      <p> <a href="https://www.cs.cornell.edu/">Computer Science</a> at
+        <a href="https://www.cornell.edu/">Cornell</a> <br>
+        Gates 349 &middot
+        amohan&#9424cs.cornell.edu
+      </p>
+      <p> <a href="https://www.cs.washington.edu/">Computer Science</a> at
+        <a href="https://www.washington.edu/">UW</a> <br>
+        Allen 382 &middot
+        amohan&#9424cs.washington.edu
+      </p>
+
+      <p>
+        <a href="https://capra.cs.cornell.edu/">Capra</a> &middot
+        <a
+          href="https://www.dli.tech.cornell.edu/ctrl-alt#:~:text=CTRL%2DATL%20brings%20together%20legal,thoughtful%20regulation%2C%20and%20responsible%20technology.">Ctrl-Alt</a>
+        &middot
+        <a href="https://www.instagram.com/middlesisterfancy/">Middle Sister</a>
+      </p>
+    </div>
+
+    <div class="bio blurb">
+      <p> I am a third-year PhD student at Cornell University.
+        For the first half of 2023, I am visiting The University of Washington.
+        My research is in programming languages. </p>
+      <p> With <a href="https://www.cs.cornell.edu/~asampson/">Adrian Sampson</a>
+        and others, I work on <a href="https://github.com/cucapra/pollen">Pollen</a>, a DSL-to-hardware compiler with
+        applications to pangenomics.
+        With <a href="https://www.cs.cornell.edu/~jnfoster/">Nate Foster</a> and others, I work on programmable packet
+        scheduling.
+        With <a href="http://james.grimmelmann.net/">James Grimmelmann</a>
+        and others, I think about how computer science intersects with the law.
+      </p>
+      <p> Before Cornell, I worked with
+        <a href="https://www.comp.nus.edu.sg/~hobor/">Aquinas Hobor</a> and others
+        on CertiGraph, a Coq development for the formal
+        verification of graph-manipulating programs written in C.
+        <!-- Highlights include the verification of a garbage collector for the  -->
+        <!-- CertiCoq compiler, the discovery of an overflow bug in Dijkstra's algorithm, -->
+        <!-- and a refinement in the precondition of Prim's algorithm. </p> -->
+        Before Aquinas, I was part of the inaugural cohort of
+        <a href="https://www.yale-nus.edu.sg/">Yale-NUS College</a>.
+        I gave the commencement address for my graduating class.
+      </p>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="grid">
+
+    <div class="info">
+      <p style="color: #ff8080; font-size: 35px; padding-top: 5%"> Blog </p>
+    </div>
+
+    <div class="blog blurb">
+      <p> Science is for everyone, but scientific papers are not.
+        My <a href="{{ get_url(path='@/blog/_index.md') }}">blog</a> is a humble experiment in accessibility.
+        The latest post is about packet scheduling, and assumes no prior knowledge about computer science.
+    </div>
+
+  </div>
+
+
+  <div class="title">
+    <p> Publications </p>
+  </div>
+
+  <div class="grid">
+
+    <div class="dpk info">
+      <p>
+      <div class="papername"> Functional Correctness of C Implementations of
+        Dijkstra's, Prim's, and Kruskal's Algorithms </div>
+      Mohan, Leow, Hobor </p>
+      <p>CAV 2021, Online </p>
+      <p> <a href="https://ucl-pplv.github.io/CAV21/poster_P_154/">Videos</a>
+        &middot
+        <a href={{ get_url(path="slides/dpk-slides.pdf" )}}>Slides</a>
+        &middot
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37">Paper</a>
+        &middot
+        <a href="https://zenodo.org/record/4744665">Code</a>
+      </p>
+    </div>
+
+    <div class="dpk blurb">
+      <p> We extend the CertiGraph library to enable reasoning about labeled edges
+        and undirected graphs, and use it to verify
+        C implementations of Dijkstra's, Prim's, and Kruskal's algorithms.
+        Each of these classic algorithms has been used and studied for
+        more than 60 years, and yet our verification reveals remarkable subtleties.
+        We show that Dijkstra has an overflow issue that places delicate restrictions on
+        the maximum allowable path cost. We also debunk the universal misconception that
+        Prim runs correctly only on connected graphs.
+        Our proofs are checked in Coq.
+      </p>
+    </div>
+
+    <div class="ack info">
+      <p>
+      <div class="papername"> Functional Proof Pearl:
+        Inverting the Ackermann Hierarchy </div>
+      Tran, Mohan, Hobor </p>
+      <p>CPP 2020, New Orleans </p>
+      <p> <a href={{ get_url(path="slides/inv-ack-slides.pdf" )}}>Slides</a>
+        &middot
+        <a href="https://dl.acm.org/doi/10.1145/3372885.3373837">Paper</a>
+        &middot
+        <a href="https://github.com/inv-ack/inv-ack">Code</a>
+      </p>
+    </div>
+
+    <div class="ack blurb">
+      <p> The Ackermann function \(\mathcal{A}\) grows explosively, and its inverse
+        \(\alpha\) is of interest in CS. Sadly, the standard practice of computing
+        \(\alpha\) via \(\mathcal{A}\) is untenable.
+        We give a new and efficient computation of \(\alpha\).
+        We also give efficient computations for the
+        related and better-known hyperoperation hierarchy
+        <span class="nowrap">(\(+\), \(\times\), exp, tetration, etc)</span>
+        and its inverse
+        <span class="nowrap">(\(-\), \(\div\), log, log\(^{*}\), etc)</span>.
+        Our definitions are proved correct in Coq,
+        and our time bounds are supported by pen-and-paper proofs and
+        benchmarks after extraction to OCaml.
+      </p>
+    </div>
+
+    <div class="autoquack info">
+      <p>
+      <div class="papername"> Certifying Graph-Manipulating C Programs
+        via Localizations within Data Structures </div>
+      Wang, Cao, Mohan, Hobor </p>
+      <p>OOPSLA 2019, Athens </p>
+
+      <p> <a href={{ get_url(path="posters/autoquack-poster.pdf" )}}>Poster</a>
+        &middot
+        <a href={{ get_url(path="slides/autoquack-slides.pdf" )}}>Slides</a>
+        &middot
+        <a href="https://dl.acm.org/doi/10.1145/3360597">Paper</a>
+        &middot
+        <a href="https://zenodo.org/record/3368779">Code</a>
+      </p>
+    </div>
+
+    <div class="autoquack blurb">
+      <p> Formally verifying graph algorithms is hard: nodes can be shared
+        arbitrarily, so uninvolved subgraphs cannot be "framed away".
+        We address this with a new separation logic rule
+        called <span class="sc">localize</span>.
+        We develop CertiGraph, a Coq library that provides a
+        setup for defining mathematical graphs in Coq, laying them out in memory
+        via separation logic,
+        and stating and proving properties about them.
+        We demonstrate the power of CertiGraph by using it to verify seven
+        graph-manipulating C programs. Our flagship example is a
+        generational garbage collector.
+        We identify two places where the semantics of C is
+        too restrictive to define
+        OCaml-style GCs.
+        Our proofs are checked in Coq. </p>
+    </div>
+
+  </div>
+
+  <div class="title">
+    <p> Select Presentations </p>
+  </div>
+
+  <div class="grid">
+
+    <div class="littleton-talk info">
+      <p>
+      <div class="papername"> Littleton: An Educational Environment for Property Law </div>
+      ProLaLa 2022, Philadelphia </p>
+      <p> <a href="https://conveyanc.es/">Website</a> &middot
+        <a href={{ get_url(path="slides/littleton-slides.pdf" )}}>Slides</a>
+      </p>
+    </div>
+
+    <div class="littleton-talk blurb">
+      <p> While much of the law is up to human interpretation, property law has a more programmatic goal.
+        An item is <i>conveyed</i> from person to person, and this conveyance may be
+        affected by further conveyances, life events such as birth and death, and the satisfaction or
+        dissatisfaction of arbitrary stipulations placed by conveyors.
+        Through all of this, the law desires unambiguous ownership.
+        Orlando is a DSL that addresses this problem through a novel use of techniques from PL, and Littleton is an
+        interpreter that makes these techniques pedagogically useful.
+      </p>
+    </div>
+
+    <div class="gc-talk info">
+      <p>
+      <div class="papername"> A Verified Garbage Collector for Gallina </div>
+      APLAS NIER 2019, Bali <br>
+      MPI-SWS, Kaiserslautern <br>
+      University of Colorado, Boulder <br>
+      IIT Madras, Chennai </p>
+      <p> <a href={{ get_url(path="slides/gc-slides.pdf" )}}>Slides</a>
+        &middot
+        <a href="https://zenodo.org/record/3368779#.X2XOQ5MzYWo">Code</a>
+      </p>
+    </div>
+
+    <div class="gc-talk blurb">
+      <p> CertiCoq compiles Gallina into C;
+        the transition from an infinite heap to a
+        finite one is supported by garbage collection
+        at the C level.
+        We get into the weeds of the verfication of this GC,
+        showing how the correctness property&mdash;a form of
+        graph isomorphism&mdash;is broken and restored.
+        We note two places where the semantics of C
+        is too restrictive to define the
+        behavior we need. We suspect these issues
+        will hinder future verifications of OCaml-style GCs. </p>
+    </div>
+
+    <div class="dijk-talk info">
+      <p>
+      <div class="papername"> Verified Dijkstra in C </div>
+      APLAS SRC 2019, Bali </p>
+      <p> <a href={{ get_url(path="posters/dijk-poster.pdf" )}}>Poster</a>
+        &middot
+        <a href="slides/dijk-slides.pdf">Slides</a>
+      </p>
+    </div>
+
+    <div class="dijk-talk blurb">
+      <p> We identify and explain an overflow bug in
+        Dijkstra's algorithm. The precise bound in the relevant
+        precondition is nontrivial: we show that the intuitive guess
+        fails, and provide a workable refinement.
+        We demonstrate the bug and our fix with Coq proofs.
+        This work was developed into our CAV 2021 paper.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="title">
+    <p> Service </p>
+  </div>
+
+  <div class="grid">
+
+    <div class="reviewer info">
+      <p class="papername"> External Reviewer </p>
+    </div>
+
+    <div class="reviewer blurb">
+      <p> <a href="https://etaps.org/2020/esop">ESOP 2020</a> </p>
+    </div>
+
+    <div class="instructor info">
+      <p class="papername"> Instructor </p>
+    </div>
+
+    <div class="instructor blurb">
+      <p> New York State's <a href="https://www.nys4-h.org/career-explorations">4H CareerEx</a> program, Summer 2022
+      </p>
+      <p> Cornell's <a href="https://sites.google.com/view/grasshopratcornell/home">Grasshopr</a> program, Spring 2022
+      </p>
+
+    </div>
+
+
+  </div>
+
+  <div class="title">
+    <p> Personal </p>
+  </div>
+
+  <div class="grid">
+
+    <div class="fav-things info">
+      <p> A (working) list of the eight best things I have consumed recently </p>
+    </div>
+
+    <div class="fav-things blurb">
+      <p> My favorite novels have long been
+        <a href="https://en.wikipedia.org/wiki/Catch-22">Catch-22</a>
+        and
+        <a href="https://en.wikipedia.org/wiki/The_God_of_Small_Things">The God
+          of Small Things</a>,
+        which worked nicely as a tragicomedy soup.
+        <a href="https://en.wikipedia.org/wiki/Sometimes_a_Great_Notion">
+          Sometimes a Great Notion</a>
+        has recently entered the mix;
+        the implications of this are unclear.
+        <a href="https://thememorypalace.us/if-you-have-to-be-a-floor-the-met-residency-episode-6/">
+          If You Have to be a Floor</a>
+        is a truly special podcast episode, while
+        <a href="https://99percentinvisible.org/episode/this-is-chance-redux/">
+          This is Chance</a>
+        is a story I'd consume in any medium.
+        <a href="https://youtu.be/YD6fvzGIBfQ">You Want It Darker</a>
+        is a good song and
+        <a href="https://en.wikipedia.org/wiki/The_Last_Emperor">The Last Emperor</a>
+        is a good movie.
+        My friends and I made tacos with carnitas, mango salsa, and duckfat tortillas last
+        year, and those too were good.
+      </p>
+    </div>
+
+    <div class="planet info">
+      <p> To <del>plant a garden</del> do scientific research is to believe in tomorrow </p>
+    </div>
+
+    <div class="planet blurb">
+      <p> The point of doing science is to have your work seen, used, and
+        made redundant. Sadly, at the rate we're heating the planet, we'll
+        soon have more rudimentary things to worry about. I'm cautiously
+        optimistic about climate change, but with the understanding that
+        intentional work is needed from everyone who can afford to put it in.
+        I'm still working on my plan, so please reach out if you'd like to discuss
+        this as either a mentor or a coconspirator.
+      </p>
+    </div>
+
+  </div>
+  <br> <br>
+</body>
+
+
 {% endblock content %}
