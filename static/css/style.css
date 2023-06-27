@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  background-color: white;
+  font-size: 19px;
+}
+
+#name {
+  font-size: 41.6px;
+}
+
+a,
+a:visited,
+a:active {
+  color: black;
+  text-decoration-thickness: 0.5px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.title {
+  margin: auto;
+  text-align: right;
+  font-size: 35px;
+  padding-top: 5%;
+  padding-right: 60.6%;
+  color: #ff8080;
+  font-weight: 100;
+}
+
+.grid {
+  margin: auto;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-column-gap: 5%;
+}
+
+.info,
+.blurb {
+  align-self: center;
+}
+
+.info {
+  text-align: right;
+}
+
+.sc {
+  font-variant: small-caps;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.papername {
+  font-weight: bold;
+}
+
+.resize {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* skinny screen overrides */
+@media (max-width: 715px) {
+  .grid {
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0%;
+  }
+
+  .info,
+  .blurb {
+    align-self: center;
+    text-align: left;
+  }
+
+  .blurb {
+    padding-bottom: 5%;
+  }
+
+  .title {
+    margin: auto;
+    text-align: left;
+    font-size: 35px;
+    padding-left: 2.5%;
+    padding-top: 5%;
+    color: #ff8080;
+    font-weight: 100;
+  }
+}

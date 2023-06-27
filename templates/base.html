@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href={{ get_url(path="css/style.css" ) }}>
   <title> Anshuman Mohan </title>
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href={{ get_url(path="img/favicon.png" )}} type="image/png">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
@@ -22,7 +22,7 @@
   <meta property="og:title" content="Anshuman Mohan" />
   <meta property="og:description"
     content="I am a third-year PhD student at Cornell Computer Science. My research is in programming languages." />
-  <meta property="og:image" content="images/anshuman-cold-color.jpg" />
+  <meta property="og:image" content={{ get_url(path="img/anshuman-cold-color.jpg" )}} />
 
   <meta name="google-site-verification" content="mIRvdHTq5eIpmwit-JxYPge7PD6ldE9SUw_BQwIrXYo" />
 </head>
@@ -35,7 +35,8 @@
 
   <div class="grid">
     <div class="bio info">
-      <p> <img class="resize" src="images/anshuman-cold-color.jpg" alt="Anshuman Mohan is Cold" width="340px"> </p>
+      <p> <img class="resize" src={{ get_url(path="img/anshuman-cold-color.jpg" )}} alt="Anshuman Mohan is Cold"
+          width="340px"> </p>
       <p> <a href="https://www.cs.cornell.edu/">Computer Science</a> at
         <a href="https://www.cornell.edu/">Cornell</a> <br>
         Gates 349 &middot
@@ -99,7 +100,7 @@
       <p>CAV 2021, Online </p>
       <p> <a href="https://ucl-pplv.github.io/CAV21/poster_P_154/">Videos</a>
         &middot
-        <a href="slides/dpk-slides.pdf">Slides</a>
+        <a href={{ get_url(path="slides/dpk-slides.pdf" )}}>Slides</a>
         &middot
         <a href="https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37">Paper</a>
         &middot
@@ -126,9 +127,9 @@
         Inverting the Ackermann Hierarchy </div>
       Tran, Mohan, Hobor </p>
       <p>CPP 2020, New Orleans </p>
-      <p> <a href="slides/inv-ack-slides.pdf">Slides</a>
+      <p> <a href={{ get_url(path="slides/inv-ack-slides.pdf" )}}>Slides</a>
         &middot
-        <a href="papers/inv-ack-as-published.pdf">Paper</a>
+        <a href="https://dl.acm.org/doi/10.1145/3372885.3373837">Paper</a>
         &middot
         <a href="https://github.com/inv-ack/inv-ack">Code</a>
       </p>
@@ -157,11 +158,11 @@
       Wang, Cao, Mohan, Hobor </p>
       <p>OOPSLA 2019, Athens </p>
 
-      <p> <a href="posters/autoquack-poster.pdf">Poster</a>
+      <p> <a href={{ get_url(path="posters/autoquack-poster.pdf" )}}>Poster</a>
         &middot
-        <a href="slides/autoquack-slides.pdf">Slides</a>
+        <a href={{ get_url(path="slides/autoquack-slides.pdf" )}}>Slides</a>
         &middot
-        <a href="papers/autoquack-as-published.pdf">Paper</a>
+        <a href="https://dl.acm.org/doi/10.1145/3360597">Paper</a>
         &middot
         <a href="https://zenodo.org/record/3368779">Code</a>
       </p>
@@ -198,7 +199,7 @@
       <div class="papername"> Littleton: An Educational Environment for Property Law </div>
       ProLaLa 2022, Philadelphia </p>
       <p> <a href="https://conveyanc.es/">Website</a> &middot
-        <a href="slides/littleton-slides.pdf">Slides</a>
+        <a href={{ get_url(path="slides/littleton-slides.pdf" )}}>Slides</a>
       </p>
     </div>
 
@@ -220,7 +221,7 @@
       MPI-SWS, Kaiserslautern <br>
       University of Colorado, Boulder <br>
       IIT Madras, Chennai </p>
-      <p> <a href="slides/gc-slides.pdf">Slides</a>
+      <p> <a href={{ get_url(path="slides/gc-slides.pdf" )}}>Slides</a>
         &middot
         <a href="https://zenodo.org/record/3368779#.X2XOQ5MzYWo">Code</a>
       </p>
@@ -244,7 +245,7 @@
       <p>
       <div class="papername"> Verified Dijkstra in C </div>
       APLAS SRC 2019, Bali </p>
-      <p> <a href="posters/dijk-poster.pdf">Poster</a>
+      <p> <a href={{ get_url(path="posters/dijk-poster.pdf" )}}>Poster</a>
         &middot
         <a href="slides/dijk-slides.pdf">Slides</a>
       </p>
