@@ -86,13 +86,4 @@ a:hover {
     padding-bottom: 5%;
   }
 
-  .title {
-    margin: auto;
-    text-align: left;
-    font-size: 35px;
-    padding-left: 2.5%;
-    padding-top: 5%;
-    color: #ff8080;
-    font-weight: 100;
-  }
 }
