@@ -1,9 +1,32 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ page.title }}
-</h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }}
+
+<div class="grid">
+
+  <div class="title">
+    <p> </p>
+  </div>
+
+  <div class="title" id="name">
+    <p style="text-align: left">
+      <a style="color: #ff8080" ; href={{ get_url(path="@/front/_index.md" )}}>Anshuman
+        Mohan</a> &middot <a style="color: #ff8080" ; href={{ get_url(path="@/blog/_index.md" )}}>Blog</a>
+    </p>
+  </div>
+
+</div>
+
+
+<div class="grid">
+
+  <div class="info">
+    <p class="papername"> {{ page.title }} </p>
+    <p> {{ page.description }} </p>
+  </div>
+  <div class="blurb">
+    {{ page.content | safe }}
+  </div>
+</div>
+
 {% endblock content %}
