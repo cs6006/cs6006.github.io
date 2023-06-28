@@ -22,11 +22,14 @@
 
   <div class="info">
     <p class="papername"> {{ page.title }} </p>
-    <p> {{ page.description }} </p>
   </div>
   <div class="blurb">
-    {{ page.content | safe }}
+    <p> {{ page.description }} </p>
   </div>
+</div>
+
+<div class="gridblog">
+  {{ page.content | safe }}
 </div>
 
 {% endblock content %}
