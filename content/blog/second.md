@@ -1,7 +1,7 @@
 +++
-title = "ELI5, Vol II"
+title = "ELI5: Binary"
 date = 2023-01-02
-description = "How I taught Ms Zdan's first-graders overflow and you can too."
+description = "How I taught Ms Zdan's first-graders binary, and you can too!"
 slug = "eli5-ii"
 +++
 

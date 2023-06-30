@@ -18,17 +18,9 @@
 </div>
 
 
-<div class="grid">
-
-  <div class="info">
-    <p class="papername"> {{ page.title }} </p>
-  </div>
-  <div class="blurb">
-    <p> {{ page.description }} </p>
-  </div>
-</div>
-
 <div class="gridblog">
+  <p class="papername"> {{ page.title }} </p>
+  <p><em> {{ page.description }} </em></p>
   {{ page.content | safe }}
 </div>
 
