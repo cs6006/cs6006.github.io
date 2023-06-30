@@ -12,4 +12,4 @@ Graham and Bella threw what is surely the finest Thanksgiving feast Singapore ha
 On learning that I had seen no Ghibli movies at all, John and Tara threw me a monthslong film festival with themed dinners to match.
 [You Want It Darker](https://youtu.be/YD6fvzGIBfQ") is a good song, and
 [The Last Emperor](https://en.wikipedia.org/wiki/The_Last_Emperor) is a good movie.
-My friends and I made tacos with carnitas, mango salsa, and duckfat tortillas, and those too were good.
+More than once my friends and I made tacos with carnitas, mango salsa, and duckfat tortillas, and those too were good.

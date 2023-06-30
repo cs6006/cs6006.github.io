@@ -110,13 +110,74 @@ some rather hungry kids.
 We were out of time, but the students had enough fun that Ms Zdan
 requested that I leave the cards for them to play with until next week's
 lesson. I left her with all eight cards, and a hint:
-_n_ cards can
-say _2<sup>n</sup>_ things.
+_n_ cards can say _2<sup>n</sup>_ things.
 
 
 ### Lesson 2: how a computer stores a number
 
-TK, but here's the punchline:
+When I went in the next week, the students were zipline-based food-ordering pros.
+They had figured out that they could use four cards to say sixteen things, and had begun to write down their "codes" on little cheatsheets.
+
+This was easy money.
+I made the point that all of this was only working because everyone had the same cheatsheets:
+if I slipped a wonky cheatsheet into the mix, the whole system would break down.
+We said, together, the the biggest word of the day: _protocol_.
+
+Next, painful as it was, we had to abandon our food metaphor.
+We went back to two cards and four items, and I explained that the real trick was _picking out_ the right item from the list.
+Indeed, they could make a list of _any_ four things and use two cards to pick out the right one.
+For instance, they could use two cards to control their teacher around the room:
+
+<center>
+
+| Signal | Order |
+| :--: | :--: |
+| `RR` | Anshuman walks to the right |
+| `BB` | Anshuman walks to the left |
+| `RB` | Anshuman walks towards you |
+| `BR` | Anshuman walks away from you |
+
+</center>
+
+and of course we spent a good five minutes having me walk around the room like a robot.
+
+I explained that a computer does the same thing, but with numbers.
+We took a minute to write `0` on every card's red side and `1` on every card's blue side, and then we put on the whiteboard the numbers that we could make with two cards:
+
+<center>
+
+| Signal <br> (cards) | Signal <br> (binary) | Number <br> (decimal) |
+| :---: | :---: | :--: |
+| `RR` | `00` | `1` |
+| `RB` | `01` | `2` |
+| `BR` | `10` | `3` |
+| `BB` | `11` | `4` |
+
+</center>
+
+What, then, could we do with three cards?
+We took it in two steps.
+1. We could use two cards, as above, to get `1`, `2`, `3`, or `4`, and then use the third card to say
+"red `1`" or "blue `1`", "red `2`" or "blue `2`", and so on.
+2. We decided to start calling "red `1`" by the name `1`, "blue `1`" by the name `5`, and so on:
+
+<center>
+
+| Signal <br> (cards) | Signal <br> (binary) | Color-Number <br> (??) | Number <br> (decimal) |
+| :---: | :---: | :--: | :--: |
+| `RRR` | `000` | red `1` | `1` |
+| `RRB` | `001` | red `2` | `2` |
+| `RBR` | `010` | red `3` | `3` |
+| `RBB` | `011` | red `4` | `4` |
+| `BRR` | `100` | blue `1` | `5` |
+| `BRB` | `101` | blue `2` | `6` |
+| `BBR` | `110` | blue `3` | `7` |
+| `BBB` | `111` | blue `4` | `8` |
+
+</center>
+
+Interestingly, the biggest challenge was the last one.
+In order to set myself up for the next lesson, I really needed for them to get to:
 
 <center>
 
@@ -133,14 +194,18 @@ TK, but here's the punchline:
 
 </center>
 
+That is, I wanted them to shift the numbers down by one: having `0` is way more useful than having `8`.
+I must admit that this was a bit of a stretch, and basically ended with me pleading with them to just try it out.
+Ms Zdan assured me that they would get it in the next lesson, and on that note we wrapped up.
+
 
 ### Acknowledgments
 
+An enormous thank you to Ms Zdan, her teaching aide Ms Jenn, and
+of course her delightful students.
 My time at Beverly J Martin Elementary School was facilitated by Cornell
 University's [<span style="font-variant: small-caps">grasshopr</span>](https://sites.google.com/view/grasshopratcornell/home) program, a volunteer organization
 that pairs graduate students with K-12 teachers so we can share our
 research with curious students. This is hard, important, rewarding work,
 and you are superstars for making it happen every year.
 
-An enormous thank you to Ms Zdan, her teaching aide Ms Jenn, and
-of course her delightful students.
