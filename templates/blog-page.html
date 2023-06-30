@@ -2,25 +2,24 @@
 
 {% block content %}
 
-<div class="grid">
-
+<div class="gridblog">
   <div class="title">
     <p> </p>
   </div>
 
   <div class="title" id="name">
-    <p style="text-align: left">
-      <a style="color: #ff8080" ; href={{ get_url(path="@/front/_index.md" )}}>Anshuman
-        Mohan</a> &middot <a style="color: #ff8080" ; href={{ get_url(path="@/blog/_index.md" )}}>Blog</a>
+    <p style="text-align: right">
+      <a style="color: #ff8080" ; href={{ get_url(path="@/blog/_index.md" )}}>Blog</a>
+      &middot
+      <a style="color: #ff8080" ; href={{ get_url(path="@/front/_index.md" )}}>Home</a>
     </p>
   </div>
 
-</div>
 
-
-<div class="gridblog">
-  <p class="papername"> {{ page.title }} </p>
-  <p><em> {{ page.description }} </em></p>
+  <p>{{ page.extra.prettydate }} </p>
+  <span class="title" style="text-align: left;"> {{ page.title }} </span>
+  <em> {{ page.description }} </em>
+  <br>
   {{ page.content | safe }}
 </div>
 

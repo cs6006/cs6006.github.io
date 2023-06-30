@@ -4,14 +4,13 @@
 
 <div class="grid">
 
-  <div class="title">
-    <p> </p>
+  <div class="title" id="name">
+    <p style="text-align: left"> Blog </p>
   </div>
 
   <div class="title" id="name">
-    <p style="text-align: left">
-      <a style="color: #ff8080" ; href={{ get_url(path="@/front/_index.md" )}}>Anshuman
-        Mohan</a> &middot Blog
+    <p style="text-align: right">
+      <a style="color: #ff8080" ; href={{ get_url(path="@/front/_index.md" )}}>Home</a>
     </p>
   </div>
 
@@ -20,18 +19,19 @@
 
 {% for page in section.pages %}
 
-<div class="grid">
+<div class="gridblog">
 
   <div class="info">
-    <p class="papername" id="{{ page.slug }}">
-      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-    </p>
-    <p><em> {{ page.description }} </em></p>
   </div>
   <div class="blurb">
-    {{ page.content | safe }}
+    {{ page.date }} <br>
+    <span class="papername" id="{{ page.slug }}">
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    </span>
+    <br>
+    <em> {{ page.description }} </em>
   </div>
-  <br><br><br>
+  <br>
 </div>
 
 {% endfor %}

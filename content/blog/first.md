@@ -3,6 +3,8 @@ title = "The eight best things I consumed in 2020"
 date = 2021-01-01
 description = ""
 slug = "eight-best-2020"
+[extra]
+prettydate = "January 1, 2021"
 +++
 
 [Sometimes a Great Notion](https://en.wikipedia.org/wiki/Sometimes_a_Great_Notion) is challenging and devastating.

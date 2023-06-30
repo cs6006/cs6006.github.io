@@ -1,8 +1,10 @@
 +++
-title = "ELI5: Binary"
-date = 2023-01-02
+title = "ELI5 (because I am, in fact, five)"
+date = 2023-06-30
 description = "How I taught Ms Zdan's first-graders binary, and you can too!"
 slug = "eli5-i"
+[extra]
+prettydate = "June 30, 2023"
 +++
 
 Little kids use computers all the time.
