@@ -9,16 +9,18 @@ prettydate = "June 30, 2023"
 
 Little kids use computers all the time.
 Increasingly early in their schooling, they also learn how to code.
-Is writing code on a computer the best way to teach computing, or more generally, [computational thinking](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf)? I think not.
+However, is writing code on a computer the best way to teach computing, or more generally, [computational thinking](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf)? I think not.
 
-A first attempt at writing code is often frustrating because the computer feels like a totally obtuse, totally unreasonable thing that just... does things a certain way.
+A first attempt at writing code is often frustrating because the computer feels like an obtuse, unreasonable thing that just... does things a certain way.
 Because it wants to; because it can.
 Memorize it and deal with it.
 At worst, the computer becomes the adversary.
 At best, it becomes an eccentric and unreliable teammate whom we have somehow learned to collaborate with.
 
 I think kids need to understand, even _empathize with_, a computer before they begin to code.
-In a series of lessons, I took this step with twenty first-graders at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm).
+Why does a computer do things the way it does?
+What compels it, and what limits it?
+In a series of four lessons, I took this step with twenty first-graders at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm) in Ithaca, NY.
 
 
 
@@ -49,7 +51,7 @@ something: red would mean a burger, and blue spaghetti.
 
 I sneaked up to one city and whispered, "Can you order me a burger,
 please?", and the students delivered. I ran to the other city and got
-them to order me another burger and some spaghetti. Then I went to the
+them to order me some spaghetti. Then I went to the
 first city and requested that they order me a hot dog.
 
 Pandemonium. I was accused of being a naughty man.
@@ -58,7 +60,7 @@ A student proposed that flashing *no card* could mean a hot dog, but I steered
 them away from that: "Well some days you may want to order nothing at
 all; reserve no card for that."
 
-Another proposed balancing the card between red and blue, or swapping
+Someone proposed balancing the card between red and blue, or swapping
 quickly between red and blue; I steered them clear of these too. After a
 minute I offered each city a second card, and they had an answer right
 away. The old rules would remain, and *any* two cards would mean hot
@@ -76,10 +78,10 @@ dog.
 
 This made me a little nervous, since it was not part of the plan, but I
 steered things along: "Well this is great, but what if the other city
-confuses the hot dog order with just a double order, or a burger that is
-chopped up and mixed into spaghetti?"
+confuses the hot dog order with _two_ burgers or _two_ things of spaghetti?
+Or a burger that is chopped up and mixed into spaghetti?"
 
-They figured out the way to make me happy:
+They figured out a way to make me happy:
 
 <center>
 
@@ -116,6 +118,12 @@ _n_ cards can say _2<sup>n</sup>_ things.
 
 
 ### Lesson 2: how a computer stores a number
+
+TK.
+
+A look at a real motherboard, and a conversaion about Moore's Law.
+
+### Lesson 3: how a computer stores a number
 
 When I went in the next week, the students were zipline-based food-ordering pros.
 They had figured out that they could use four cards to say sixteen things, and had begun to write down their "codes" on little cheatsheets.
@@ -200,6 +208,12 @@ That is, I wanted them to shift the numbers down by one: having `0` is way more 
 I must admit that this was a bit of a stretch, and basically ended with me pleading with them to just try it out.
 Ms Zdan assured me that they would get it in the next lesson, and on that note we wrapped up.
 
+### Lesson 4: counting too far
+
+TK.
+
+Overflow.
+
 
 ### Acknowledgments
 
@@ -210,4 +224,3 @@ University's [<span style="font-variant: small-caps">grasshopr</span>](https://s
 that pairs graduate students with K-12 teachers so we can share our
 research with curious students. This is hard, important, rewarding work,
 and you are superstars for making it happen every year.
-
