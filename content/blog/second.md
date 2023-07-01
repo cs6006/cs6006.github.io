@@ -1,8 +1,9 @@
 +++
 title = "ELI5 (because I am, in fact, five)"
 date = 2023-06-30
-description = "How I taught Ms Zdan's first-graders binary, and you can too!"
+description = "How I taught Ms Zdan's first-graders to empathize with a machine, and you can too!"
 slug = "eli5-i"
+draft = true
 [extra]
 prettydate = "June 30, 2023"
 +++
@@ -43,7 +44,7 @@ something: red would mean a burger, and blue spaghetti.
 <center>
 
 | Signal | Order |
-| :--: | :--: |
+| :----: | :---: |
 | `R` | burger |
 | `B` | spaghetti |
 
@@ -69,8 +70,8 @@ dog.
 <center>
 
 | Signal | Order |
-| :--: | :--: |
-| `R` |     burger |
+| :----: | :---: |
+| `R` | burger |
 | `B` | spaghetti |
 | `RR`, `BB`, `RB`, `BR` | hot dog |
 
@@ -86,8 +87,8 @@ They figured out a way to make me happy:
 <center>
 
 | Signal | Order |
-| :--: | :--: |
-| `RR` |     burger |
+| :----: | :---: |
+| `RR` | burger |
 | `BB` | spaghetti |
 | `RB`, `BR` | hot dog |
 
@@ -98,8 +99,8 @@ and on prodding, they realized they could order yet another thing:
 <center>
 
 | Signal | Order |
-| :--: | :--: |
-| `RR` |     burger |
+| :----: | :---: |
+| `RR` | burger |
 | `BB` | spaghetti |
 | `RB` | hot dog |
 | `BR` | bibimbap |
@@ -117,31 +118,50 @@ lesson. I left her with all eight cards, and a hint:
 _n_ cards can say _2<sup>n</sup>_ things.
 
 
-### Lesson 2: how a computer stores a number
+### Lesson 2: computer as nation-state
 
-TK.
+I brought in a motherboard from the lab and showed it to the class.
+There was a lot going on, of course, but I made the key point: a chip has a bunch of things that are connected by wire to other things.
 
-A look at a real motherboard, and a conversaion about Moore's Law.
+<center>
+
+<img src="https://newscenter.lbl.gov/wp-content/uploads/2021/12/microelectronic-raigvi-shutterstock_1568488030-1200x800-1.jpg"
+alt= "A computer chip showing two square components in gray. The squares are connected by eight wires. Other wires are leaving the components and leading off to other parts of the circuit, out of frame." width="60%" title="Image from raigvi/Shutterstock">
+
+</center>
+
+As in the image above, I found them two large components that were directly connected using wires (in the image, look for the gray squares connected by four pairs of wire).
+These components were not all that different from our cities on hills, and the wires were not all that different from our cards.
+Power flowing through a wire? That's a blue card.
+No power? That's a red card.
+
+The kids were especially excited to see that the motherboard had a little fan, and this led to a discussion about how running electricity through a computer chip causes it to heat up.
+My students were young enough to have never actually handled incandescent lightbulbs, so that example fell flat on its face.
+However, they had almost all used their parents' phones and tablets for hours in a row and knew that those got hot.
+
+TK
 
 ### Lesson 3: how a computer stores a number
 
-When I went in the next week, the students were zipline-based food-ordering pros.
+Ms Zdan reported that the students had taken to playing the card game in their free time.
+By the time I arrived for the third lesson, they were pros at zipline-based food-ordering.
 They had figured out that they could use four cards to say sixteen things, and had begun to write down their "codes" on little cheatsheets.
 
 This was easy money.
 I made the point that all of this was only working because everyone had the same cheatsheets:
 if I slipped a wonky cheatsheet into the mix, the whole system would break down.
 We said, together, the the biggest word of the day: _protocol_.
+They had arrived at a protocol for ordering food, just as computers have protocols for
+their electrical signals.
 
-Next, painful as it was, we had to abandon our food metaphor.
-We went back to two cards and four items, and I explained that the real trick was _picking out_ the right item from the list.
+We went back to two cards and four items, and I explained that the real challenge was not making a list, but making a list from which they could then _pick out_ a single item without confusing anyone else.
 Indeed, they could make a list of _any_ four things and use two cards to pick out the right one.
 For instance, they could use two cards to control their teacher around the room:
 
 <center>
 
 | Signal | Order |
-| :--: | :--: |
+| :----: | :---: |
 | `RR` | Anshuman walks to the right |
 | `BB` | Anshuman walks to the left |
 | `RB` | Anshuman walks towards you |
@@ -149,49 +169,31 @@ For instance, they could use two cards to control their teacher around the room:
 
 </center>
 
-and of course we spent a good five minutes having me walk around the room like a robot.
+and of course we spent a good five minutes having me bumble around the room like a robot.
 
 I explained that a computer does the same thing, but with numbers.
-We took a minute to write `0` on every card's red side and `1` on every card's blue side, and then we put on the whiteboard the numbers that we could make with two cards:
+We made a list of the kids' favorite numbers, and gave them card-based signals:
+
 
 <center>
 
-| Signal <br> (cards) | Signal <br> (binary) | Number <br> (decimal) |
-| :---: | :---: | :--: |
-| `RR` | `00` | `1` |
-| `RB` | `01` | `2` |
-| `BR` | `10` | `3` |
-| `BB` | `11` | `4` |
+| Signal | Number |
+| :----: | :----: |
+| `RR` | a thousand! |
+| `RB` | a thousand and one! |
+| `BR` | a million! |
+| `BB` | a quintajillion! |
 
 </center>
 
-What, then, could we do with three cards?
-We took it in two steps.
-1. We could use two cards, as above, to get `1`, `2`, `3`, or `4`, and then use the third card to say
-"red `1`" or "blue `1`", "red `2`" or "blue `2`", and so on.
-2. We decided to start calling "red `1`" by the name `1`, "blue `1`" by the name `5`, and so on:
+Fun fact: little kids love big numbers.
+
+We took a minute to write `0` on every card's red side and `1` on every card's blue side, and then I told them what a computer's favorite eight numbers are: `0`, `1`, `2`, `3`, `4`, `5`, `6`, and `7`.
+Rather boring, yes, but could we signal them? Yes we could:
 
 <center>
 
-| Signal <br> (cards) | Signal <br> (binary) | Color-Number <br> (??) | Number <br> (decimal) |
-| :---: | :---: | :--: | :--: |
-| `RRR` | `000` | red `1` | `1` |
-| `RRB` | `001` | red `2` | `2` |
-| `RBR` | `010` | red `3` | `3` |
-| `RBB` | `011` | red `4` | `4` |
-| `BRR` | `100` | blue `1` | `5` |
-| `BRB` | `101` | blue `2` | `6` |
-| `BBR` | `110` | blue `3` | `7` |
-| `BBB` | `111` | blue `4` | `8` |
-
-</center>
-
-Interestingly, the biggest challenge was the last one.
-In order to set myself up for the next lesson, I really needed for them to get to:
-
-<center>
-
-| Signal <br> (cards) | Signal <br> (binary) | Number <br> (decimal) |
+| Signal <br> (color) | Signal <br> (binary) | Number <br> (computer) |
 | :---: | :---: | :--: |
 | `RRR` | `000` | `0` |
 | `RRB` | `001` | `1` |
@@ -204,9 +206,7 @@ In order to set myself up for the next lesson, I really needed for them to get t
 
 </center>
 
-That is, I wanted them to shift the numbers down by one: having `0` is way more useful than having `8`.
-I must admit that this was a bit of a stretch, and basically ended with me pleading with them to just try it out.
-Ms Zdan assured me that they would get it in the next lesson, and on that note we wrapped up.
+We wrote this down on our little protocol cheatsheets and called it a day.
 
 ### Lesson 4: counting too far
 
@@ -224,3 +224,4 @@ University's [<span style="font-variant: small-caps">grasshopr</span>](https://s
 that pairs graduate students with K-12 teachers so we can share our
 research with curious students. This is hard, important, rewarding work,
 and you are superstars for making it happen every year.
+
