@@ -2,7 +2,7 @@
 title = "ELI5 (because I am, in fact, five)"
 date = 2023-06-30
 description = "How I taught Ms Zdan's first-graders to empathize with a machine, and you can too!"
-slug = "eli5-i"
+slug = "eli5"
 [extra]
 prettydate = "June 30, 2023"
 +++
@@ -209,11 +209,106 @@ Rather boring in comparison, yes, but could we signal them? Yes we could:
 
 We wrote this down on our little protocol cheatsheets and called it a day.
 
+
+ and called it a day.
+
 ### Lesson 4: counting too far
 
-TK.
+We started the day with a little arithmetic.
 
-Overflow.
+> _How do we add 6 and 3?_
+
+My students were early enough in their education that they did this _exactly_ the way I wanted them to, and not the way an adult would have:
+
+> _We put up six fingers and say out loud, "one, two", "three". As we say each number, we put up an additional finger. Then we stop and think. How many fingers do we have up? Nine!_
+
+I then asked them to add 6 and 5.
+
+The started off strong, but then, at ten, ran out of fingers.
+Some of them counted a toe, but most just contended themselves with calling me a naughty man again.
+
+I explained that a computer sometimes has a similar problem: it wants to keep going but it runs out of wires, just like running out of fingers or running out of cards.
+
+I requested a volunteer, and they and I stood up front facing the class.
+We were on a number line, and currently at 0.
+They were a person, and I was a computer.
+
+<center>
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :---: | :---: |
+| they | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |
+| me | | | | | | | | | |
+
+</center>
+
+"One more!" I said, and we both hopped over to stand on 1.
+
+<center>
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :---: | :---: |
+| <span style="color:white">they</span> | they | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |
+| | me | | | | | | | | |
+
+</center>
+
+The class took over. One more! One more! We eventually landed at:
+
+<center>
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :---: | :---: |
+| <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |  <span style="color:white">they</span> | they |<span style="color:white">they</span> | <span style="color:white">they</span> |
+| | | | | | | | me | | |
+
+</center>
+
+One more! I ran to the other end of the number line and stood on 0, while my volunteer jumped to eight:
+
+<center>
+
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :---: | :---: |
+| <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |  <span style="color:white">they</span> | <span style="color:white">they</span> | they | <span style="color:white">they</span> |
+| me | | | | | | | | | |
+
+</center>
+
+There was pandemonium, of course, but once we had settled down I asked them to look at their cheat sheets from the previous time:
+
+<center>
+
+| Signal <br> (color) | Signal <br> (binary) | Number <br> (computer) |
+| :---: | :---: | :--: |
+| `RRR` | `000` | `0` |
+| `RRB` | `001` | `1` |
+| `RBR` | `010` | `2` |
+| `RBB` | `011` | `3` |
+| `BRR` | `100` | `4` |
+| `BRB` | `101` | `5` |
+| `BBR` | `110` | `6` |
+| `BBB` | `111` | `7` |
+
+</center>
+
+What was a poor computer to do? I had simply run out of unique signals after 7, and I wanted to do something resonable, so I had wrapped around to 0.
+
+I explained that a computer does the same thing, and that it is called _overflow_.
+By and large, the largest number that a computer can express, plus one, is the smallest number it can express.
+
+So what's the big deal?
+
+Well, let's say we're in a car with our mom.
+The speedometer says we're doing seven miles per hour, and, yup, we are.
+Then mom hits the gas a hair and the speedometer says we're doing zero.
+Actually, we're doing eight.
+Hmm, there's a bunch of stuff that we're allowed to do at zero miles an hour:
+we're allowed to unbuckle our seatbelts, open the door, step out for ice-cream.
+Doing this at eight miles per hour is a bad idea, and we know it.
+
+With this, we wrapped up.
+I like to think that my students left with a little more empathy for the computer, and all the little hoops it needs to jump through while it does our bidding.
 
 
 ### Acknowledgments
