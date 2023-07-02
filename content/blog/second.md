@@ -1,10 +1,10 @@
 +++
-title = "ELI5 (because I am, in fact, five)"
-date = 2023-06-30
+title = "Explain It Like I'm Five"
+date = 2023-07-02
 description = "How I taught Ms Zdan's first-graders to empathize with a machine, and you can too!"
 slug = "eli5"
 [extra]
-prettydate = "June 30, 2023"
+prettydate = "July 2, 2023"
 +++
 
 Little kids use computers all the time.
@@ -129,7 +129,7 @@ alt= "A computer chip showing two square components in gray. The squares are con
 
 </center>
 
-As in the image above, I point out two large components that were connected directly using wires (in the image, look for the gray squares, and notice that they are connected directly by four pairs of wire).
+As in the image above, I pointed out two large components that were connected directly using wires (in the image, look for the gray squares, and notice that they are connected directly by four pairs of wire).
 These components were like our cities on hills, and the wires like our cards.
 Power flowing through a wire? That's a blue card.
 No power? That's a red card.
@@ -209,8 +209,6 @@ Rather boring in comparison, yes, but could we signal them? Yes we could:
 
 We wrote this down on our little protocol cheatsheets and called it a day.
 
-
- and called it a day.
 
 ### Lesson 4: counting too far
 
