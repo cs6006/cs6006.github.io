@@ -3,7 +3,6 @@ title = "ELI5 (because I am, in fact, five)"
 date = 2023-06-30
 description = "How I taught Ms Zdan's first-graders to empathize with a machine, and you can too!"
 slug = "eli5-i"
-draft = true
 [extra]
 prettydate = "June 30, 2023"
 +++
@@ -77,7 +76,7 @@ dog.
 
 </center>
 
-This made me a little nervous, since it was not part of the plan, but I
+This made me a little nervous since it was not part of the plan, but I
 steered things along: "Well this is great, but what if the other city
 confuses the hot dog order with _two_ burgers or _two_ things of spaghetti?
 Or a burger that is chopped up and mixed into spaghetti?"
@@ -94,7 +93,7 @@ They figured out a way to make me happy:
 
 </center>
 
-and on prodding, they realized they could order yet another thing:
+and, on prodding, they realized they could order yet another thing:
 
 <center>
 
@@ -130,21 +129,23 @@ alt= "A computer chip showing two square components in gray. The squares are con
 
 </center>
 
-As in the image above, I found them two large components that were directly connected using wires (in the image, look for the gray squares connected by four pairs of wire).
-These components were not all that different from our cities on hills, and the wires were not all that different from our cards.
+As in the image above, I point out two large components that were connected directly using wires (in the image, look for the gray squares, and notice that they are connected directly by four pairs of wire).
+These components were like our cities on hills, and the wires like our cards.
 Power flowing through a wire? That's a blue card.
 No power? That's a red card.
+All their confusion from the previous week was also the computer's confusion,
+and all their limitations also applied to the computer.
 
-The kids were especially excited to see that the motherboard had a little fan, and this led to a discussion about how running electricity through a computer chip causes it to heat up.
+As an aside, the kids were especially excited to see that the motherboard had a little fan, and this led to a discussion about how running electricity through a computer chip causes it to heat up.
 My students were young enough to have never actually handled incandescent lightbulbs, so that example fell flat on its face.
 However, they had almost all used their parents' phones and tablets for hours in a row and knew that those got hot.
-
-TK
+I explained that we _could_ use less power to keep the temperature down, but that would make it harder to tell whether a wire was sending power or not.
+The kids made a neat connection to the cities-on-hills game: this was like ordering food on a really foggy day, when it was hard for the other city to see the color of the card.
 
 ### Lesson 3: how a computer stores a number
 
 Ms Zdan reported that the students had taken to playing the card game in their free time.
-By the time I arrived for the third lesson, they were pros at zipline-based food-ordering.
+By the time I arrived for the third lesson, they were absolute pros at zipline-based food-ordering.
 They had figured out that they could use four cards to say sixteen things, and had begun to write down their "codes" on little cheatsheets.
 
 This was easy money.
@@ -189,7 +190,7 @@ We made a list of the kids' favorite numbers, and gave them card-based signals:
 Fun fact: little kids love big numbers.
 
 We took a minute to write `0` on every card's red side and `1` on every card's blue side, and then I told them what a computer's favorite eight numbers are: `0`, `1`, `2`, `3`, `4`, `5`, `6`, and `7`.
-Rather boring, yes, but could we signal them? Yes we could:
+Rather boring in comparison, yes, but could we signal them? Yes we could:
 
 <center>
 
