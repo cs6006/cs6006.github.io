@@ -366,9 +366,9 @@ I'll answer some of them here.
     We have clever ways of checking for overflow, but here's the thing:
     addition accompanied by a check for overflow is _way_ more expensive than a plain addition.
     We want to run these special checks incredibly judiciously.
-    As an analogy, consider a person who gives their car a 45-minute inspection every time they want to drive it 20 minutes to work.
+    As an analogy, consider a person who gives their car a 75-minute inspection every time they want to drive it ten minutes to work.
     They'll be safe, but they'll also be late.
-    Checking the car once a year before that big family road trip is probably enough.
+    Checking the car before each big family road trip is probably enough.
 
     Yet another instance where the computer must tread a tightrope!
 
