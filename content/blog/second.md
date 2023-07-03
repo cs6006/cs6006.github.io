@@ -9,24 +9,25 @@ prettydate = "July 2, 2023"
 
 Little kids use computers all the time.
 Increasingly early in their schooling, they also learn how to code.
-However, is writing code on a computer the best way to teach computing, or, more generally, [computational thinking](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf)? I think not.
+However, is writing code on a computer the best way to teach computing? I think not.
 
-A first attempt at writing code is often frustrating because the computer feels like an obtuse, unreasonable thing that just... does things a certain way.
+A first attempt at writing code is often frustrating because the computer feels like an obtuse, unreasonable entity that just does things a certain way.
 Because it wants to; because it can.
 Memorize it and deal with it.
 At worst, the computer becomes the adversary.
-At best, it becomes an eccentric and unreliable teammate whom we have somehow learned to collaborate with.
+At best, it becomes an eccentric and unreliable teammate with whom we have somehow learned to collaborate.
 
 I think kids need to understand, even empathize with, a computer before they begin to code.
 Why does a computer do things the way it does?
 What compels it, and what limits it?
-In a series of four lessons, I took this step with twenty first-graders at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm).
+Some of these ideas are captured by the term [computational thinking](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf), due to Jeannette Wing.
+In a series of four lessons, I taught twenty first-graders at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm) to think computationally.
 
 
 
 ### Lesson 1: a tale of two hungry cities
 
-I went into class with eight pieces of card, each colored red on one
+I went into class with eight cards, each colored red on one
 side and blue on the other. I split the class into two groups, standing
 in huddles on opposite ends of the room. Each group got one card
 and I explained the game:
@@ -43,9 +44,9 @@ something: red would mean a burger, and blue spaghetti.
 <center>
 
 | Signal | Order |
-| :----: | :---: |
+| :---- | ---: |
 | `R` | burger |
-| `B` | spaghetti |
+| `B` | <span style="color:white">they</span>spaghetti |
 
 </center>
 
@@ -68,9 +69,9 @@ dog.
 <center>
 
 | Signal | Order |
-| :----: | :---: |
+| :---- | ---: |
 | `R` | burger |
-| `B` | spaghetti |
+| `B` | <span style="color:white">they</span>spaghetti |
 | `RR`, `BB`, `RB`, `BR` | hot dog |
 
 </center>
@@ -85,9 +86,9 @@ They figured out a way to make me happy:
 <center>
 
 | Signal | Order |
-| :----: | :---: |
+| :---- | ---: |
 | `RR` | burger |
-| `BB` | spaghetti |
+| `BB` | <span style="color:white">they</span>spaghetti |
 | `RB`, `BR` | hot dog |
 
 </center>
@@ -97,9 +98,9 @@ and, on prodding, they realized they could order yet another thing:
 <center>
 
 | Signal | Order |
-| :----: | :---: |
+| :---- | ---: |
 | `RR` | burger |
-| `BB` | spaghetti |
+| `BB` | <span style="color:white">they</span>spaghetti |
 | `RB` | hot dog |
 | `BR` | bibimbap |
 
@@ -136,11 +137,16 @@ A computer chip has way more than two components, and those components need to t
 All of the confusion that my students faced with the card game was also the computer's confusion,
 and all their limitations also applied to the computer.
 
-As an aside, the kids were especially excited to see that the motherboard had a little fan, and this led to a discussion about how running electricity through a computer chip causes it to heat up.
+The kids were especially excited to see that the motherboard had a little fan, and this led to a discussion about how running electricity through a computer chip causes it to heat up.
 My students were young enough to have never actually handled incandescent lightbulbs, so that example fell flat on its face.
 However, they had almost all used their parents' phones and tablets for hours in a row and knew that those got hot.
 I explained that we _could_ use less power to keep the temperature down, but that would make it harder to tell whether a wire was sending power or not.
 The kids made a neat connection to the cities-on-hills game: this was like ordering food on a really foggy day, when it was hard for the other city to see the color of the card.
+
+An aside that I did not bring up with the kids:
+in the card game, we reserved the _no card_ signal for _no order_.
+This is not actually available to a computer, since even the silence of a wire has a semantic meaning.
+To get around this, a computer uses a special signal to mean _no signal_.
 
 ### Lesson 3: how a computer stores a number
 
@@ -148,7 +154,6 @@ Ms Zdan reported that the students had taken to playing the card game in their f
 By the time I arrived for the third lesson, they were absolute pros at ordering food by zip line.
 They had figured out that they could use four cards to say sixteen things, and had begun to write down their "codes" on little cheatsheets.
 
-This was easy money.
 I made the point that all of this was only working because everyone had the same cheatsheets:
 if I slipped a wonky cheatsheet into the mix, the whole system would break down.
 We said, together, the biggest word of the day: _protocol_.
@@ -162,11 +167,11 @@ For instance, they could use two cards to control their teacher around the room:
 <center>
 
 | Signal | Order |
-| :----: | :---: |
+| :---- | ---: |
 | `RR` | Anshuman walks to the right |
 | `BB` | Anshuman walks to the left |
 | `RB` | Anshuman walks towards you |
-| `BR` | Anshuman walks away from you |
+| `BR` | <span style="color:white">they</span>Anshuman walks away from you |
 
 </center>
 
@@ -179,9 +184,9 @@ We made a list of the kids' favorite numbers, and gave them card-based signals:
 <center>
 
 | Signal | Number |
-| :----: | :----: |
+| :---- | ----: |
 | `RR` | a thousand! |
-| `RB` | a thousand and one! |
+| `RB` | <span style="color:white">they</span>a thousand and one! |
 | `BR` | a million! |
 | `BB` | a quintajillion! |
 
@@ -194,9 +199,9 @@ Rather boring in comparison, yes, but could we signal them? Yes we could:
 
 <center>
 
-| Signal <br> (color) | Signal <br> (binary) | Number <br> (computer) |
-| :---: | :---: | :--: |
-| `RRR` | `000` | `0` |
+| Signal <br> (color) | Signal <br> (binary) <span style="color:white">they</span>| Number <br> (computer) |
+| :--- | :--- | --: |
+| `RRR`<span style="color:white">theythey</span> | `000` | `0` |
 | `RRB` | `001` | `1` |
 | `RBR` | `010` | `2` |
 | `RBB` | `011` | `3` |
@@ -230,7 +235,7 @@ They were a person, and I was a computer.
 
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :---: | :---: |
-| they | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |
+| them | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |
 | me | | | | | | | | | |
 
 </center>
@@ -241,7 +246,7 @@ They were a person, and I was a computer.
 
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :---: | :---: |
-| <span style="color:white">they</span> | they | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |
+| <span style="color:white">they</span> | them | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |
 | | me | | | | | | | | |
 
 </center>
@@ -252,7 +257,7 @@ The class took over. One more! One more! We eventually landed at:
 
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :---: | :---: |
-| <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |  <span style="color:white">they</span> | they |<span style="color:white">they</span> | <span style="color:white">they</span> |
+| <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |  <span style="color:white">they</span> | them |<span style="color:white">they</span> | <span style="color:white">they</span> |
 | | | | | | | | me | | |
 
 </center>
@@ -263,7 +268,7 @@ One more! I ran to the other end of the number line and stood on 0, while my vol
 
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :---: | :---: |
-| <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |  <span style="color:white">they</span> | <span style="color:white">they</span> | they | <span style="color:white">they</span> |
+| <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> | <span style="color:white">they</span> |  <span style="color:white">they</span> | <span style="color:white">they</span> | them | <span style="color:white">they</span> |
 | me | | | | | | | | | |
 
 </center>
@@ -272,9 +277,9 @@ There was a little riot. Once we had settled down, I asked them to look at their
 
 <center>
 
-| Signal <br> (color) | Signal <br> (binary) | Number <br> (computer) |
-| :---: | :---: | :--: |
-| `RRR` | `000` | `0` |
+| Signal <br> (color) | Signal <br> (binary) <span style="color:white">they</span>| Number <br> (computer) |
+| :--- | :--- | --: |
+| `RRR`<span style="color:white">theythey</span> | `000` | `0` |
 | `RRB` | `001` | `1` |
 | `RBR` | `010` | `2` |
 | `RBB` | `011` | `3` |
@@ -330,12 +335,12 @@ I'll answer some of them here.
 
 <center>
 
-| Signal <br> (color) | Signal <br> (binary) | Number <br> (computer) |
-| :---: | :---: | :--: |
-| `RRR` | `000` | `-4` |
+| Signal <br> (color) | Signal <br> (binary) <span style="color:white">they</span>| Number <br> (computer) |
+| :--- | :--- | --: |
+| `RRR`<span style="color:white">theythey</span> | `000` | `-4` |
 | `RRB` | `001` | `-3` |
 | `RBR` | `010` | `-2` |
-| `RBB` | `011` | `-3` |
+| `RBB` | `011` | `-1` |
 | `BRR` | `100` | `0` |
 | `BRB` | `101` | `1` |
 | `BBR` | `110` | `2` |
@@ -373,8 +378,8 @@ I'll answer some of them here.
     Yet another instance where the computer must tread a tightrope!
 
     Sometimes, after analyzing a piece of code carefully, we're pretty sure that overflow _cannot possibly_ occur in that code, so we allow ourselves to skip the expensive checks.
-    However, sometimes our analysis is wrong.
-    For instance, in 2021 I showed that Dijkstra's algorithm, a classic algorithm that has been taught and used for over 60 years, can overflow in a way that was not previously known.
+    However, this analysis is tricky and we had better make sure we get them right.
+    In 2021 I helped show that Dijkstra's algorithm, a classic algorithm that has been taught and used for over 60 years, can overflow in a way that was not previously known.
     I'll let you read all about that [here](https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37).
 
 
