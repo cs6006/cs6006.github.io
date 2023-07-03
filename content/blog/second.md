@@ -152,7 +152,7 @@ They had figured out that they could use four cards to say sixteen things, and h
 This was easy money.
 I made the point that all of this was only working because everyone had the same cheatsheets:
 if I slipped a wonky cheatsheet into the mix, the whole system would break down.
-We said, together, the the biggest word of the day: _protocol_.
+We said, together, the biggest word of the day: _protocol_.
 They had arrived at a protocol for ordering food, just as computers have protocols for
 their electrical signals.
 
