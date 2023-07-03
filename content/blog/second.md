@@ -20,7 +20,7 @@ At best, it becomes an eccentric and unreliable teammate whom we have somehow le
 I think kids need to understand, even _empathize with_, a computer before they begin to code.
 Why does a computer do things the way it does?
 What compels it, and what limits it?
-In a series of four lessons, I took this step with twenty first-graders at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm) in Ithaca, NY.
+In a series of four lessons, I took this step with twenty first-graders at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm).
 
 
 
@@ -53,7 +53,6 @@ I sneaked up to one city and whispered, "Can you order me a burger,
 please?", and the students delivered. I ran to the other city and got
 them to order me some spaghetti. Then I went to the
 first city and requested that they order me a hot dog.
-
 Pandemonium. I was accused of being a naughty man.
 
 A student proposed that flashing *no card* could mean a hot dog, but I steered
@@ -156,7 +155,7 @@ We said, together, the biggest word of the day: _protocol_.
 They had arrived at a protocol for ordering food, just as computers have protocols for
 their electrical signals.
 
-We went back to two cards and four items, and I explained that the real challenge was not making a list, but making a list from which they could then _pick out_ a single item without confusing anyone else.
+We went back to two cards and four items, and I explained that the real challenge was not making a long list, but making a list that was still short enough that they could later _pick out_ a single item.
 Indeed, they could make a list of _any_ four things and use two cards to pick out the right one.
 For instance, they could use two cards to control their teacher around the room:
 
@@ -216,7 +215,7 @@ We wrote this down on our little protocol cheatsheets and called it a day.
 We started the day with a little arithmetic. How do we add 6 and 3?
 My students were early enough in their education that they did this _exactly_ the way I wanted them to:
 
-> _We put up six fingers and say out loud, "one, two", "three". As we say each number, we put up an additional finger. Then we stop and think. How many fingers do we have up? Nine!_
+> _We put up six fingers and say out loud, "one, two, three". As we say each number, we put up an additional finger. Then we stop and think. How many fingers do we have up? Nine!_
 
 I then asked them to add 6 and 5.
 They started off strong, but then, at ten, ran out of fingers.
@@ -301,7 +300,7 @@ Hmm, there's a bunch of stuff that we're allowed to do at zero miles an hour:
 we're allowed to unbuckle our seatbelts, open the door, step out for ice-cream.
 Doing this at eight miles per hour is a bad idea, and we know it.
 
-With this, we wrapped up.
+With this (and an impromptu group hug), we wrapped up.
 I like to think that my students left with a little more empathy for the computer, and all the little hoops it needs to jump through while it does our bidding.
 
 
@@ -311,22 +310,22 @@ I designed the lesson plan above with some care, trying to tell no untruths and 
 No doubt there will be further questions.
 I'll answer some of them here.
 
-1. _My computer can count _way_ past seven, I'm pretty sure. What's up with that?_
+1. _I'm pretty sure my computer can count way past seven. What's up with that?_
 
-    In the example, a computer has three digits, where each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
+    In the example, a computer has three digits and each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
     A modern computer actually has 64 digits, and so it can say 2<sup>64</sup> things.
-    That's 1.84 x 10<sup>19</sup> numbers: more than there are grains of sand on Earth.
+    That's 1.84 x 10<sup>19</sup>: more than there are grains of sand on Earth.
 
     The average computer does not actually allow you to count that high:
     it wants to save a good chunk of its signals for stuff besides numbers.
-    For instance, it needs a unique signal for the symbol `+`, for `?`, for each letter of the Roman alphabet,
+    For instance, it needs a unique signal for each mathematical symbol, for each mark of punctuation, for each letter of the Roman alphabet,
     for each letter of _every other_ alphabet, for each emoji, and so on.
-    Even after allowing only a limited number of signals for numbers, we can still count pretty high:
+    Even after allowing only a limited number of signals for numbers, we can still count pretty far:
     the largest number my machine will (easily) let me count to is 4611686018427387903.
 
 2. _What about negative numbers?_
 
-    In the example I assumed we only wanted positive numbers, so I chose to use my three digits to count from 0 to 7.
+    In the example I simplified to positive numbers, so I was able to use my three digits to count from 0 to 7.
     When we know we'll need negative numbers, the standard practice is to use the same signals to instead mean:
 
 <center>
@@ -344,6 +343,7 @@ I'll answer some of them here.
 
 </center>
 
+
 3. _Is this overflow business real? What do we do about it?_
 
     Oh it's real.
@@ -360,13 +360,13 @@ I'll answer some of them here.
       ```
     First I asked my machine to please tell me the biggest number it can handle.
     Then I added one to it.
-    The answer was a rather small number; note that we've gone negative.
+    The answer was a rather small number; note that we've gone deeply negative.
     In fact, it was the smallest number my machine can handle.
 
     We have clever ways of checking for overflow, but here's the thing:
     addition accompanied by a check for overflow is _way_ more expensive than a plain addition.
-    We want to run these special checks incredibly judiciously.
-    As an analogy, consider a person who gives their car a 75-minute inspection every time they want to drive it ten minutes to work.
+    We want to run these special checks judiciously.
+    As an analogy, consider a person who gives their car a 75-minute inspection every morning before driving ten minutes to work.
     They'll be safe, but they'll also be late.
     Checking the car before each big family road trip is probably enough.
 
