@@ -372,6 +372,12 @@ I'll answer some of them here.
 
     Yet another instance where the computer must tread a tightrope!
 
+    Sometimes, after analyzing an algorithm carefully, we're pretty sure that overflow _cannot possibly_ occur in that algorithm, so we allow ourselves to skip the expensive checks.
+    However, sometimes our analysis is wrong.
+    For instance, some work I did in 2021 showed that Dijkstra's algorithm a classic algorithm that has been taught and used for over 60 years, can overflow in a way that was not previously known.
+    I'll let you read all about that [here](https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37).
+
+
 
 ### Acknowledgments
 
