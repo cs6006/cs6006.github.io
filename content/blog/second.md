@@ -112,8 +112,8 @@ they could, and left the room. I returned to a menu of eight items and
 some rather hungry kids.
 
 We were out of time, but the students had enough fun that Ms Zdan
-requested that I leave the cards for them to play with until next week's
-lesson. I left her with all eight cards, and a hint:
+requested that I leave the cards for them to play with.
+I left her with all eight cards, and a hint:
 _n_ cards can say _2<sup>n</sup>_ things.
 
 
@@ -133,7 +133,8 @@ As in the image above, I pointed out two large components that were connected di
 These components were like our cities on hills, and the wires like our cards.
 Power flowing through a wire? That's a blue card.
 No power? That's a red card.
-All their confusion from the previous week was also the computer's confusion,
+A computer chip has way more than two components, and those components need to talk each other all the time.
+All of the confusion that my students faced with the card game was also the computer's confusion,
 and all their limitations also applied to the computer.
 
 As an aside, the kids were especially excited to see that the motherboard had a little fan, and this led to a discussion about how running electricity through a computer chip causes it to heat up.
@@ -216,19 +217,18 @@ We started the day with a little arithmetic.
 
 > _How do we add 6 and 3?_
 
-My students were early enough in their education that they did this _exactly_ the way I wanted them to, and not the way an adult would have:
+My students were early enough in their education that they did this _exactly_ the way I wanted them to:
 
 > _We put up six fingers and say out loud, "one, two", "three". As we say each number, we put up an additional finger. Then we stop and think. How many fingers do we have up? Nine!_
 
 I then asked them to add 6 and 5.
-
-The started off strong, but then, at ten, ran out of fingers.
+They started off strong, but then, at ten, ran out of fingers.
 Some of them counted a toe, but most just contended themselves with calling me a naughty man again.
 
-I explained that a computer sometimes has a similar problem: it wants to keep going but it runs out of wires, just like running out of fingers or running out of cards.
+I explained that a computer sometimes has a similar problem: it wants to keep going but it runs out of ways of holding on to information, just like running out of fingers to count or cards to signal with.
 
 I requested a volunteer, and they and I stood up front facing the class.
-We were on a number line, and currently at 0.
+We were on a number line, both currently at 0.
 They were a person, and I was a computer.
 
 <center>
