@@ -31,7 +31,7 @@ side and blue on the other. I split the class into two groups, standing
 in huddles on opposite ends of the room. I handed each group one card
 and explained the game:
 
-> _You are two cities on hills, and you have a zipline that carries food
+> _You are two cities on hills, and you have a zip line that carries food
 between you. Occasionally you'd like to order something to eat from the
 other city, but the cities are rather far apart and you can only
 communicate using your cards. A card is either red or blue, and you can
@@ -145,7 +145,7 @@ The kids made a neat connection to the cities-on-hills game: this was like order
 ### Lesson 3: how a computer stores a number
 
 Ms Zdan reported that the students had taken to playing the card game in their free time.
-By the time I arrived for the third lesson, they were absolute pros at zipline-based food-ordering.
+By the time I arrived for the third lesson, they were absolute pros at ordering food by zip line.
 They had figured out that they could use four cards to say sixteen things, and had begun to write down their "codes" on little cheatsheets.
 
 This was easy money.
@@ -285,7 +285,7 @@ There was a little riot. Once we had settled down, I asked them to look at their
 
 </center>
 
-What was a poor computer to do? I had simply run out of unique signals after 7, and I wanted to do something resonable, so I had wrapped around to 0.
+What was a poor computer to do? I had simply run out of unique signals after 7, and I wanted to do something reasonable, so I had wrapped around to 0.
 
 I explained that a computer does the same thing, and that it is called _overflow_.
 By and large, the largest number that a computer can express, plus one, is the smallest number it can express.
@@ -388,4 +388,3 @@ University's [<span style="font-variant: small-caps">grasshopr</span>](https://s
 that pairs graduate students with K-12 teachers so we can share our
 research with curious students. This is hard, important, rewarding work,
 and you are superstars for making it happen every year.
-
