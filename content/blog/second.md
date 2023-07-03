@@ -213,10 +213,7 @@ We wrote this down on our little protocol cheatsheets and called it a day.
 
 ### Lesson 4: counting too far
 
-We started the day with a little arithmetic.
-
-> _How do we add 6 and 3?_
-
+We started the day with a little arithmetic. How do we add 6 and 3?
 My students were early enough in their education that they did this _exactly_ the way I wanted them to:
 
 > _We put up six fingers and say out loud, "one, two", "three". As we say each number, we put up an additional finger. Then we stop and think. How many fingers do we have up? Nine!_
@@ -224,7 +221,6 @@ My students were early enough in their education that they did this _exactly_ th
 I then asked them to add 6 and 5.
 They started off strong, but then, at ten, ran out of fingers.
 Some of them counted a toe, but most just contended themselves with calling me a naughty man again.
-
 I explained that a computer sometimes has a similar problem: it wants to keep going but it runs out of ways of holding on to information, just like running out of fingers to count or cards to signal with.
 
 I requested a volunteer, and they and I stood up front facing the class.
@@ -273,7 +269,7 @@ One more! I ran to the other end of the number line and stood on 0, while my vol
 
 </center>
 
-There was pandemonium, of course, but once we had settled down I asked them to look at their cheat sheets from the previous time:
+There was a little riot. Once we had settled down, I asked them to look at their cheat sheets from the previous time:
 
 <center>
 
@@ -307,6 +303,74 @@ Doing this at eight miles per hour is a bad idea, and we know it.
 
 With this, we wrapped up.
 I like to think that my students left with a little more empathy for the computer, and all the little hoops it needs to jump through while it does our bidding.
+
+
+### Further reading for the precocious student (or teacher)
+
+I designed the lesson plan above with some care, trying to tell no untruths and yet trying not to overwhelm.
+No doubt there will be further questions.
+I'll answer some of them here.
+
+1. _My computer can count _way_ past seven, I'm pretty sure. What's up with that?_
+
+    In the example, a computer has three digits, where each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
+    A modern computer actually has 64 digits, and so it can say 2<sup>64</sup> things.
+    That's 1.84 x 10<sup>19</sup> numbers: more than there are grains of sand on Earth.
+
+    The average computer does not actually allow you to count that high:
+    it wants to save a good chunk of its signals for stuff besides numbers.
+    For instance, it needs a unique signal for `+`, for `-`, for each letter of the Roman alphabet,
+    for each letter of _every other_ alphabet, for each emoji, and so on.
+    Even after allowing only a limited number of signals for numbers, we can still count pretty high:
+    the largest number my machine will (easily) let me count to is 4611686018427387903.
+
+2. _What about negative numbers?_
+
+    _In the example I assumed we only wanted positive numbers, so I chose to use my three digits to count from 0 to 7.
+    When we know we'll need negative numbers, the standard practice is to use the same signals to instead mean:_
+
+<center>
+
+| Signal <br> (color) | Signal <br> (binary) | Number <br> (computer) |
+| :---: | :---: | :--: |
+| `RRR` | `000` | `-4` |
+| `RRB` | `001` | `-3` |
+| `RBR` | `010` | `-2` |
+| `RBB` | `011` | `-3` |
+| `BRR` | `100` | `0` |
+| `BRB` | `101` | `1` |
+| `BBR` | `110` | `2` |
+| `BBB` | `111` | `3` |
+
+</center>
+
+3. Is this overflow business real? What do we do about it?
+
+    Oh it's real.
+    Consider the following code.
+    My questions start with `#` and end with `;;`.  The computer's answers start with `- : int =`.
+
+      ```
+      # max_int;;
+      - : int = 4611686018427387903
+      # 4611686018427387903 + 1;;
+      - : int = -4611686018427387904
+      # min_int;;
+      - : int = -4611686018427387904
+      ```
+    First I asked my machine to please tell me the biggest number it can handle.
+    Then I added one to it.
+    The answer was a rather small number; note that we've gone negative.
+    In fact, it was the smallest number my machine can handle.
+
+    We have clever ways of checking for overflow, but here's the thing:
+    addition accompanied by a check for overflow is _way_ more expensive than a plain addition.
+    We want to run these special checks incredibly judiciously.
+    As an analogy, consider a person who gives their car a 45-minute inspection every time they want to drive it 20 minutes to work.
+    They'll be safe, but they'll also be late.
+    Checking the car once a year before that big family road trip is probably enough.
+
+    Yet another instance where the computer must tread a tightrope!
 
 
 ### Acknowledgments
