@@ -9,7 +9,7 @@ prettydate = "July 2, 2023"
 
 Little kids use computers all the time.
 Increasingly early in their schooling, they also learn how to code.
-However, is writing code on a computer the best way to teach computing, or more generally, [computational thinking](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf)? I think not.
+However, is writing code on a computer the best way to teach computing, or, more generally, [computational thinking](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf)? I think not.
 
 A first attempt at writing code is often frustrating because the computer feels like an obtuse, unreasonable thing that just... does things a certain way.
 Because it wants to; because it can.
@@ -17,7 +17,7 @@ Memorize it and deal with it.
 At worst, the computer becomes the adversary.
 At best, it becomes an eccentric and unreliable teammate whom we have somehow learned to collaborate with.
 
-I think kids need to understand, even _empathize with_, a computer before they begin to code.
+I think kids need to understand, even empathize with, a computer before they begin to code.
 Why does a computer do things the way it does?
 What compels it, and what limits it?
 In a series of four lessons, I took this step with twenty first-graders at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm).
@@ -28,8 +28,8 @@ In a series of four lessons, I took this step with twenty first-graders at [Beve
 
 I went into class with eight pieces of card, each colored red on one
 side and blue on the other. I split the class into two groups, standing
-in huddles on opposite ends of the room. I handed each group one card
-and explained the game:
+in huddles on opposite ends of the room. Each group got one card
+and I explained the game:
 
 > _You are two cities on hills, and you have a zip line that carries food
 between you. Occasionally you'd like to order something to eat from the
@@ -76,7 +76,7 @@ dog.
 </center>
 
 This made me a little nervous since it was not part of the plan, but I
-steered things along: "Well this is great, but what if the other city
+moved us along: "Well this is great, but what if the other city
 confuses the hot dog order with _two_ burgers or _two_ things of spaghetti?
 Or a burger that is chopped up and mixed into spaghetti?"
 
@@ -119,7 +119,7 @@ _n_ cards can say _2<sup>n</sup>_ things.
 ### Lesson 2: computer as nation-state
 
 I brought in a motherboard from the lab and showed it to the class.
-There was a lot going on, of course, but I made the key point: a chip has a bunch of things that are connected by wire to other things.
+There was a lot going on, but I made the key point: a chip has a bunch of things that are connected by wire to other things.
 
 <center>
 
@@ -128,7 +128,7 @@ alt= "A computer chip showing two square components in gray. The squares are con
 
 </center>
 
-As in the image above, I pointed out two large components that were connected directly using wires (in the image, look for the gray squares, and notice that they are connected directly by four pairs of wire).
+As in the image above, I pointed out two large components that were connected directly using wire (in the image, look for the gray squares, and notice that they are connected directly by four pairs of wire).
 These components were like our cities on hills, and the wires like our cards.
 Power flowing through a wire? That's a blue card.
 No power? That's a red card.
@@ -155,7 +155,7 @@ We said, together, the biggest word of the day: _protocol_.
 They had arrived at a protocol for ordering food, just as computers have protocols for
 their electrical signals.
 
-We went back to two cards and four items, and I explained that the real challenge was not making a long list, but making a list that was still short enough that they could later _pick out_ a single item.
+We went back to two cards and four items, and I explained that the real challenge was not making a long list, but making a long list that was still short enough to later pick out a unique item.
 Indeed, they could make a list of _any_ four things and use two cards to pick out the right one.
 For instance, they could use two cards to control their teacher around the room:
 
@@ -213,13 +213,13 @@ We wrote this down on our little protocol cheatsheets and called it a day.
 ### Lesson 4: counting too far
 
 We started the day with a little arithmetic. How do we add 6 and 3?
-My students were early enough in their education that they did this _exactly_ the way I wanted them to:
+My students were early enough in their education that they did this exactly the way I wanted them to:
 
 > _We put up six fingers and say out loud, "one, two, three". As we say each number, we put up an additional finger. Then we stop and think. How many fingers do we have up? Nine!_
 
 I then asked them to add 6 and 5.
 They started off strong, but then, at ten, ran out of fingers.
-Some of them counted a toe, but most just contended themselves with calling me a naughty man again.
+Some of them counted a toe, but most just contented themselves with calling me a naughty man again.
 I explained that a computer sometimes has a similar problem: it wants to keep going but it runs out of ways of holding on to information, just like running out of fingers to count or cards to signal with.
 
 I requested a volunteer, and they and I stood up front facing the class.
@@ -306,7 +306,7 @@ I like to think that my students left with a little more empathy for the compute
 
 ### Further reading for the precocious student (or teacher)
 
-I designed the lesson plan above with some care, trying to tell no untruths and yet trying not to overwhelm.
+I designed the lesson plan above with some care, trying to tell no untruths and yet not to overwhelm.
 No doubt there will be further questions.
 I'll answer some of them here.
 
@@ -318,8 +318,8 @@ I'll answer some of them here.
 
     The average computer does not actually allow you to count that high:
     it wants to save a good chunk of its signals for stuff besides numbers.
-    For instance, it needs a unique signal for each mathematical symbol, for each mark of punctuation, for each letter of the Roman alphabet,
-    for each letter of _every other_ alphabet, for each emoji, and so on.
+    For instance, it needs a unique signal for each mathematical symbol, each mark of punctuation, each letter of the Roman alphabet,
+    each letter of _every other_ human script, for each emoji, and so on.
     Even after allowing only a limited number of signals for numbers, we can still count pretty far:
     the largest number my machine will (easily) let me count to is 4611686018427387903.
 
@@ -364,7 +364,7 @@ I'll answer some of them here.
     In fact, it was the smallest number my machine can handle.
 
     We have clever ways of checking for overflow, but here's the thing:
-    addition accompanied by a check for overflow is _way_ more expensive than a plain addition.
+    addition accompanied by a check for overflow is meaningfully more expensive than a plain addition.
     We want to run these special checks judiciously.
     As an analogy, consider a person who gives their car a 75-minute inspection every morning before driving ten minutes to work.
     They'll be safe, but they'll also be late.
