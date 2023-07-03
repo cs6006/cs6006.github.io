@@ -319,15 +319,15 @@ I'll answer some of them here.
 
     The average computer does not actually allow you to count that high:
     it wants to save a good chunk of its signals for stuff besides numbers.
-    For instance, it needs a unique signal for `+`, for `-`, for each letter of the Roman alphabet,
+    For instance, it needs a unique signal for the symbol `+`, for `?`, for each letter of the Roman alphabet,
     for each letter of _every other_ alphabet, for each emoji, and so on.
     Even after allowing only a limited number of signals for numbers, we can still count pretty high:
     the largest number my machine will (easily) let me count to is 4611686018427387903.
 
 2. _What about negative numbers?_
 
-    _In the example I assumed we only wanted positive numbers, so I chose to use my three digits to count from 0 to 7.
-    When we know we'll need negative numbers, the standard practice is to use the same signals to instead mean:_
+    In the example I assumed we only wanted positive numbers, so I chose to use my three digits to count from 0 to 7.
+    When we know we'll need negative numbers, the standard practice is to use the same signals to instead mean:
 
 <center>
 
@@ -344,7 +344,7 @@ I'll answer some of them here.
 
 </center>
 
-3. Is this overflow business real? What do we do about it?
+3. _Is this overflow business real? What do we do about it?_
 
     Oh it's real.
     Consider the following code.
@@ -372,9 +372,9 @@ I'll answer some of them here.
 
     Yet another instance where the computer must tread a tightrope!
 
-    Sometimes, after analyzing an algorithm carefully, we're pretty sure that overflow _cannot possibly_ occur in that algorithm, so we allow ourselves to skip the expensive checks.
+    Sometimes, after analyzing a piece of code carefully, we're pretty sure that overflow _cannot possibly_ occur in that code, so we allow ourselves to skip the expensive checks.
     However, sometimes our analysis is wrong.
-    For instance, some work I did in 2021 showed that Dijkstra's algorithm a classic algorithm that has been taught and used for over 60 years, can overflow in a way that was not previously known.
+    For instance, in 2021 I showed that Dijkstra's algorithm, a classic algorithm that has been taught and used for over 60 years, can overflow in a way that was not previously known.
     I'll let you read all about that [here](https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37).
 
 
