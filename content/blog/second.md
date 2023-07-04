@@ -1,5 +1,5 @@
 +++
-title = "Explain It Like I'm Five"
+title = "Explain Like I'm Five"
 date = 2023-07-02
 description = "How I taught Ms Zdan's first-graders to empathize with a machine, and you can too!"
 slug = "eli5"
@@ -327,6 +327,7 @@ I'll answer some of them here.
     each letter of _every other_ human script, for each emoji, and so on.
     Even after allowing only a limited number of signals for numbers, we can still count pretty far:
     the largest number my machine will (easily) let me count to is 4611686018427387903.
+    There are ways to count higher still, but that requires more fancy footwork.
 
 2. _What about negative numbers?_
 
@@ -386,8 +387,7 @@ I'll answer some of them here.
 
 ### Acknowledgments
 
-An enormous thank you to Ms Zdan, her teaching aide Ms Jenn, and
-of course her delightful students.
+An enormous thank you to Ms Zdan, her teaching aide Ms Jenn, and her delightful students.
 My time at Beverly J Martin Elementary School was facilitated by Cornell
 University's [<span style="font-variant: small-caps">grasshopr</span>](https://sites.google.com/view/grasshopratcornell/home) program, a volunteer organization
 that pairs graduate students with K-12 teachers so we can share our
