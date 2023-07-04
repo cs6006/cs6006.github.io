@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="gridblog">
+  <div class="title">
+    <p> </p>
+  </div>
+
+  <div class="title" id="name">
+    <p style="text-align: right">
+      <a style="color: #ff8080" ; href={{ get_url(path="@/course/_index.md" )}}>CS 6001</a>
+      &middot
+      <a style="color: #ff8080" ; href={{ get_url(path="@/front/_index.md" )}}>Home</a>
+    </p>
+  </div>
+
+
+  <p>{{ page.extra.prettydate }} </p>
+  <span class="title" style="text-align: left;"> {{ page.title }} </span>
+  <em> {{ page.description }} </em>
+  <br>
+  {{ page.content | safe }}
+</div>
+
+{% endblock content %}
