@@ -16,22 +16,74 @@
 
 </div>
 
+<div class="grid">
+
+  <div class="title info">
+    <p> Essentials</p>
+  </div>
+
+  <div class="title blurb">
+    <p> </p>
+  </div>
+
+  <div class="blog info papername">
+    <p>Instructors</p>
+  </div>
+
+  <div class="blog blurb">
+    <p> Jacqueline Maasch &middot; NYC campus &middot; maasch&#9424cs.cornell.edu <br>
+      <a href="https://www.cs.cornell.edu/~amohan/">Anshuman Mohan</a> &middot; Ithaca campus &middot;
+      amohan&#9424cs.cornell.edu
+    </p>
+  </div>
+
+  <div class="blog info papername">
+    <p>Meeting time and location(s)</p>
+  </div>
+
+  <div class="blog blurb">
+    <p> Mondays, 12:20pm - 1:10pm <br>
+      Ithaca: Gates 310 <br>
+      NYC: Bloomberg ??? </p>
+  </div>
+
+  <div class="blog info papername">
+    <p>Credits and grading</p>
+  </div>
+
+  <div class="blog blurb">
+    <p> One credit; available with an S/U option only</p>
+  </div>
+</div>
+
+
+<div class="grid">
+
+  <div class="title info">
+    <p> Schedule</p>
+  </div>
+
+  <div class="title blurb">
+    <p> </p>
+  </div>
+</div>
+
 
 {% for page in section.pages | reverse %}
 
-<div class="gridblog">
+<div class="grid">
 
-  <div class="info">
+  <div class=" info">
+    <p> {{ page.extra.prettydate }} </p>
   </div>
-  <div class="blurb">
-    {{ page.extra.prettydate }} <br>
-    <span class="papername" id="{{ page.slug }}">
-      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-    </span>
-    <br>
+
+  <div class="papername blurb">
+    <p> <span class="" id="{{ page.slug }}">
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      </span> </p>
   </div>
-  <br>
 </div>
+
 
 {% endfor %}
 

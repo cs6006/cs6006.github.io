@@ -82,7 +82,7 @@
       <p> Science is for everyone, but scientific papers are not.
         My blog is a humble experiment in accessibility:
         I offer primers on research topics I care about, assuming no prior exposure to computer science.
-        Because I cannot help myself, I will probably also write about food.
+        Because I cannot help myself, I will probably also write about food. </p>
     </div>
 
     <div class="planet info papername">
@@ -101,260 +101,259 @@
     </div>
 
   </div>
+
+  <div class="grid">
+
+    <div class="title info">
+      <p> Publications </p>
+    </div>
+
+    <div class="title blurb">
+      <p> </p>
+    </div>
+
+    <div class="formalsched info">
+      <p>
+      <div class="papername"> Formal Abstractions for Packet Scheduling </div>
+      Mohan, Liu, Kapp&#233, Foster, Kozen </p>
+      <p>OOPSLA 2023, Cascais </p>
+      <p>
+        <!-- <a href="https://ucl-pplv.github.io/CAV21/poster_P_154/">Videos</a> -->
+        <!-- &middot -->
+        <!-- <a href={{ get_url(path="slides/dpk-slides.pdf" )}}>Slides</a> -->
+        <!-- &middot -->
+        <a href="https://arxiv.org/abs/2211.11659">Preprint</a>
+        <!-- &middot -->
+        <!-- <a href="https://zenodo.org/record/4744665">Code</a> -->
+      </p>
+    </div>
+
+    <div class="formalsched blurb">
+      <p>
+        PIFO trees are an exciting primitive for programmable packet scheduling, but are poorly understood and
+        underutilized.
+        In this work, we give PIFO trees a formal syntax and semantics.
+        We prove properties about the expressivity of PIFO trees as a function of their shape, and show that tall
+        skinny trees are more expressive than short fat ones.
+        We also show how the behavior of a PIFO tree of one shape can be simulated by another PIFO tree of another shape
+        without an appreciable loss in performance.
+      </p>
+    </div>
+
+    <div class="dpk info">
+      <p>
+      <div class="papername"> Functional Correctness of C Implementations of
+        Dijkstra's, Prim's, and Kruskal's Algorithms </div>
+      Mohan, Leow, Hobor </p>
+      <p>CAV 2021, Online </p>
+      <p> <a href="https://ucl-pplv.github.io/CAV21/poster_P_154/">Videos</a>
+        &middot
+        <a href={{ get_url(path="slides/dpk-slides.pdf" )}}>Slides</a>
+        &middot
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37">Paper</a>
+        &middot
+        <a href="https://zenodo.org/record/4744665">Code</a>
+      </p>
+    </div>
+
+    <div class="dpk blurb">
+      <p> We extend the CertiGraph library to enable reasoning about labeled edges
+        and undirected graphs, and use it to verify
+        C implementations of Dijkstra's, Prim's, and Kruskal's algorithms.
+        Each of these classic algorithms has been used and studied for
+        more than 60 years, and yet our verification reveals remarkable subtleties.
+        We show that Dijkstra has an overflow issue that places delicate restrictions on
+        the maximum allowable path cost. We also debunk the universal misconception that
+        Prim runs correctly only on connected graphs.
+        Our proofs are checked in Coq.
+      </p>
+    </div>
+
+    <div class="ack info">
+      <p>
+      <div class="papername"> Functional Proof Pearl:
+        Inverting the Ackermann Hierarchy </div>
+      Tran, Mohan, Hobor </p>
+      <p>CPP 2020, New Orleans </p>
+      <p> <a href={{ get_url(path="slides/inv-ack-slides.pdf" )}}>Slides</a>
+        &middot
+        <a href="https://dl.acm.org/doi/10.1145/3372885.3373837">Paper</a>
+        &middot
+        <a href="https://github.com/inv-ack/inv-ack">Code</a>
+      </p>
+    </div>
+
+    <div class="ack blurb">
+      <p> The Ackermann function \(\mathcal{A}\) grows explosively, and its inverse
+        \(\alpha\) is of interest in CS. Sadly, the standard practice of computing
+        \(\alpha\) via \(\mathcal{A}\) is untenable.
+        We give a new and efficient computation of \(\alpha\).
+        We also give efficient computations for the
+        related and better-known hyperoperation hierarchy
+        <span class="nowrap">(\(+\), \(\times\), exp, tetration, etc)</span>
+        and its inverse
+        <span class="nowrap">(\(-\), \(\div\), log, log\(^{*}\), etc)</span>.
+        Our definitions are proved correct in Coq,
+        and our time bounds are supported by pen-and-paper proofs and
+        benchmarks after extraction to OCaml.
+      </p>
+    </div>
+
+    <div class="autoquack info">
+      <p>
+      <div class="papername"> Certifying Graph-Manipulating C Programs
+        via Localizations within Data Structures </div>
+      Wang, Cao, Mohan, Hobor </p>
+      <p>OOPSLA 2019, Athens </p>
+
+      <p> <a href={{ get_url(path="posters/autoquack-poster.pdf" )}}>Poster</a>
+        &middot
+        <a href={{ get_url(path="slides/autoquack-slides.pdf" )}}>Slides</a>
+        &middot
+        <a href="https://dl.acm.org/doi/10.1145/3360597">Paper</a>
+        &middot
+        <a href="https://zenodo.org/record/3368779">Code</a>
+      </p>
+    </div>
+
+    <div class="autoquack blurb">
+      <p> Formally verifying graph algorithms is hard: nodes can be shared
+        arbitrarily, so uninvolved subgraphs cannot be "framed away".
+        We address this with a new separation logic rule
+        called <span class="sc">localize</span>.
+        We develop CertiGraph, a Coq library that provides a
+        setup for defining mathematical graphs in Coq, laying them out in memory
+        via separation logic,
+        and stating and proving properties about them.
+        We demonstrate the power of CertiGraph by using it to verify seven
+        graph-manipulating C programs. Our flagship example is a
+        generational garbage collector.
+        We identify two places where the semantics of C is
+        too restrictive to define
+        OCaml-style GCs.
+        Our proofs are checked in Coq. </p>
+    </div>
+
+  </div>
+
+  <div class="grid">
+
+    <div class="title info">
+      <p> Presentations </p>
+    </div>
+
+    <div class="title blurb">
+      <p> </p>
+    </div>
+
+
+    <div class="littleton-talk info">
+      <p>
+      <div class="papername"> Littleton: An Educational Environment for Property Law </div>
+      ProLaLa 2022, Philadelphia </p>
+      <p> <a href="https://conveyanc.es/">Website</a> &middot
+        <a href={{ get_url(path="slides/littleton-slides.pdf" )}}>Slides</a>
+      </p>
+    </div>
+
+    <div class="littleton-talk blurb">
+      <p> While much of the law is up to human interpretation, property law has a more programmatic goal.
+        An item is <i>conveyed</i> from person to person, and this conveyance may be
+        affected by further conveyances, life events such as birth and death, and the satisfaction or
+        dissatisfaction of arbitrary stipulations placed by conveyors.
+        Through all of this, the law desires unambiguous ownership.
+        Orlando is a DSL that addresses this problem through a novel use of techniques from PL, and Littleton is an
+        interpreter that makes these techniques pedagogically useful.
+      </p>
+    </div>
+
+    <div class="gc-talk info">
+      <p>
+      <div class="papername"> A Verified Garbage Collector for Gallina </div>
+      APLAS NIER 2019, Bali <br>
+      MPI-SWS, Kaiserslautern <br>
+      University of Colorado, Boulder <br>
+      IIT Madras, Chennai </p>
+      <p> <a href={{ get_url(path="slides/gc-slides.pdf" )}}>Slides</a>
+        &middot
+        <a href="https://zenodo.org/record/3368779#.X2XOQ5MzYWo">Code</a>
+      </p>
+    </div>
+
+    <div class="gc-talk blurb">
+      <p> CertiCoq compiles Gallina into C;
+        the transition from an infinite heap to a
+        finite one is supported by garbage collection
+        at the C level.
+        We get into the weeds of the verfication of this GC,
+        showing how the correctness property&mdash;a form of
+        graph isomorphism&mdash;is broken and restored.
+        We note two places where the semantics of C
+        is too restrictive to define the
+        behavior we need. We suspect these issues
+        will hinder future verifications of OCaml-style GCs. </p>
+    </div>
+
+    <div class="dijk-talk info">
+      <p>
+      <div class="papername"> Verified Dijkstra in C </div>
+      APLAS SRC 2019, Bali </p>
+      <p> <a href={{ get_url(path="posters/dijk-poster.pdf" )}}>Poster</a>
+        &middot
+        <a href="slides/dijk-slides.pdf">Slides</a>
+      </p>
+    </div>
+
+    <div class="dijk-talk blurb">
+      <p> We identify and explain an overflow bug in
+        Dijkstra's algorithm. The precise bound in the relevant
+        precondition is nontrivial: we show that the intuitive guess
+        fails, and provide a workable refinement.
+        We demonstrate the bug and our fix with Coq proofs.
+        This work was developed into our CAV 2021 paper.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="grid">
+
+    <div class="title info">
+      <p> Service </p>
+    </div>
+
+    <div class="title blurb">
+      <p> </p>
+    </div>
+
+    <div class="reviewer info">
+      <p class="papername"> External Reviewer </p>
+    </div>
+
+    <div class="reviewer blurb">
+      <p> <a href="https://etaps.org/2020/esop">ESOP 2020</a> </p>
+    </div>
+
+    <div class="instructor info">
+      <p class="papername"> Instructor </p>
+    </div>
+
+    <div class="instructor blurb">
+      <p> <a href="{{ get_url(path='@/course/_index.md') }}">CS 6001</a>, an onboarding course for first-year PhD
+        students
+        at
+        Cornell
+        <br> New York State's <a href="https://www.nys4-h.org/career-explorations">4H CareerEx</a> program, Summer 2022
+        <br> Cornell's <a href="https://sites.google.com/view/grasshopratcornell/home">Grasshopr</a> program, Spring
+        2022
+      </p>
+
+    </div>
+
+
+  </div>
+
 </body>
-
-
-
-<div class="grid">
-
-  <div class="title info">
-    <p> Publications </p>
-  </div>
-
-  <div class="title blurb">
-    <p> </p>
-  </div>
-
-  <div class="formalsched info">
-    <p>
-    <div class="papername"> Formal Abstractions for Packet Scheduling </div>
-    Mohan, Liu, Kapp&#233, Foster, Kozen </p>
-    <p>OOPSLA 2023, Cascais </p>
-    <p>
-      <!-- <a href="https://ucl-pplv.github.io/CAV21/poster_P_154/">Videos</a> -->
-      <!-- &middot -->
-      <!-- <a href={{ get_url(path="slides/dpk-slides.pdf" )}}>Slides</a> -->
-      <!-- &middot -->
-      <a href="https://arxiv.org/abs/2211.11659">Preprint</a>
-      <!-- &middot -->
-      <!-- <a href="https://zenodo.org/record/4744665">Code</a> -->
-    </p>
-  </div>
-
-  <div class="formalsched blurb">
-    <p>
-      PIFO trees are an exciting primitive for programmable packet scheduling, but are poorly understood and
-      underutilized.
-      In this work, we give PIFO trees a formal syntax and semantics.
-      We prove properties about the expressivity of PIFO trees as a function of their shape, and show that tall
-      skinny trees are more expressive than short fat ones.
-      We also show how the behavior of a PIFO tree of one shape can be simulated by another PIFO tree of another shape
-      without an appreciable loss in performance.
-    </p>
-  </div>
-
-  <div class="dpk info">
-    <p>
-    <div class="papername"> Functional Correctness of C Implementations of
-      Dijkstra's, Prim's, and Kruskal's Algorithms </div>
-    Mohan, Leow, Hobor </p>
-    <p>CAV 2021, Online </p>
-    <p> <a href="https://ucl-pplv.github.io/CAV21/poster_P_154/">Videos</a>
-      &middot
-      <a href={{ get_url(path="slides/dpk-slides.pdf" )}}>Slides</a>
-      &middot
-      <a href="https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37">Paper</a>
-      &middot
-      <a href="https://zenodo.org/record/4744665">Code</a>
-    </p>
-  </div>
-
-  <div class="dpk blurb">
-    <p> We extend the CertiGraph library to enable reasoning about labeled edges
-      and undirected graphs, and use it to verify
-      C implementations of Dijkstra's, Prim's, and Kruskal's algorithms.
-      Each of these classic algorithms has been used and studied for
-      more than 60 years, and yet our verification reveals remarkable subtleties.
-      We show that Dijkstra has an overflow issue that places delicate restrictions on
-      the maximum allowable path cost. We also debunk the universal misconception that
-      Prim runs correctly only on connected graphs.
-      Our proofs are checked in Coq.
-    </p>
-  </div>
-
-  <div class="ack info">
-    <p>
-    <div class="papername"> Functional Proof Pearl:
-      Inverting the Ackermann Hierarchy </div>
-    Tran, Mohan, Hobor </p>
-    <p>CPP 2020, New Orleans </p>
-    <p> <a href={{ get_url(path="slides/inv-ack-slides.pdf" )}}>Slides</a>
-      &middot
-      <a href="https://dl.acm.org/doi/10.1145/3372885.3373837">Paper</a>
-      &middot
-      <a href="https://github.com/inv-ack/inv-ack">Code</a>
-    </p>
-  </div>
-
-  <div class="ack blurb">
-    <p> The Ackermann function \(\mathcal{A}\) grows explosively, and its inverse
-      \(\alpha\) is of interest in CS. Sadly, the standard practice of computing
-      \(\alpha\) via \(\mathcal{A}\) is untenable.
-      We give a new and efficient computation of \(\alpha\).
-      We also give efficient computations for the
-      related and better-known hyperoperation hierarchy
-      <span class="nowrap">(\(+\), \(\times\), exp, tetration, etc)</span>
-      and its inverse
-      <span class="nowrap">(\(-\), \(\div\), log, log\(^{*}\), etc)</span>.
-      Our definitions are proved correct in Coq,
-      and our time bounds are supported by pen-and-paper proofs and
-      benchmarks after extraction to OCaml.
-    </p>
-  </div>
-
-  <div class="autoquack info">
-    <p>
-    <div class="papername"> Certifying Graph-Manipulating C Programs
-      via Localizations within Data Structures </div>
-    Wang, Cao, Mohan, Hobor </p>
-    <p>OOPSLA 2019, Athens </p>
-
-    <p> <a href={{ get_url(path="posters/autoquack-poster.pdf" )}}>Poster</a>
-      &middot
-      <a href={{ get_url(path="slides/autoquack-slides.pdf" )}}>Slides</a>
-      &middot
-      <a href="https://dl.acm.org/doi/10.1145/3360597">Paper</a>
-      &middot
-      <a href="https://zenodo.org/record/3368779">Code</a>
-    </p>
-  </div>
-
-  <div class="autoquack blurb">
-    <p> Formally verifying graph algorithms is hard: nodes can be shared
-      arbitrarily, so uninvolved subgraphs cannot be "framed away".
-      We address this with a new separation logic rule
-      called <span class="sc">localize</span>.
-      We develop CertiGraph, a Coq library that provides a
-      setup for defining mathematical graphs in Coq, laying them out in memory
-      via separation logic,
-      and stating and proving properties about them.
-      We demonstrate the power of CertiGraph by using it to verify seven
-      graph-manipulating C programs. Our flagship example is a
-      generational garbage collector.
-      We identify two places where the semantics of C is
-      too restrictive to define
-      OCaml-style GCs.
-      Our proofs are checked in Coq. </p>
-  </div>
-
-</div>
-
-<div class="grid">
-
-  <div class="title info">
-    <p> Presentations </p>
-  </div>
-
-  <div class="title blurb">
-    <p> </p>
-  </div>
-
-
-  <div class="littleton-talk info">
-    <p>
-    <div class="papername"> Littleton: An Educational Environment for Property Law </div>
-    ProLaLa 2022, Philadelphia </p>
-    <p> <a href="https://conveyanc.es/">Website</a> &middot
-      <a href={{ get_url(path="slides/littleton-slides.pdf" )}}>Slides</a>
-    </p>
-  </div>
-
-  <div class="littleton-talk blurb">
-    <p> While much of the law is up to human interpretation, property law has a more programmatic goal.
-      An item is <i>conveyed</i> from person to person, and this conveyance may be
-      affected by further conveyances, life events such as birth and death, and the satisfaction or
-      dissatisfaction of arbitrary stipulations placed by conveyors.
-      Through all of this, the law desires unambiguous ownership.
-      Orlando is a DSL that addresses this problem through a novel use of techniques from PL, and Littleton is an
-      interpreter that makes these techniques pedagogically useful.
-    </p>
-  </div>
-
-  <div class="gc-talk info">
-    <p>
-    <div class="papername"> A Verified Garbage Collector for Gallina </div>
-    APLAS NIER 2019, Bali <br>
-    MPI-SWS, Kaiserslautern <br>
-    University of Colorado, Boulder <br>
-    IIT Madras, Chennai </p>
-    <p> <a href={{ get_url(path="slides/gc-slides.pdf" )}}>Slides</a>
-      &middot
-      <a href="https://zenodo.org/record/3368779#.X2XOQ5MzYWo">Code</a>
-    </p>
-  </div>
-
-  <div class="gc-talk blurb">
-    <p> CertiCoq compiles Gallina into C;
-      the transition from an infinite heap to a
-      finite one is supported by garbage collection
-      at the C level.
-      We get into the weeds of the verfication of this GC,
-      showing how the correctness property&mdash;a form of
-      graph isomorphism&mdash;is broken and restored.
-      We note two places where the semantics of C
-      is too restrictive to define the
-      behavior we need. We suspect these issues
-      will hinder future verifications of OCaml-style GCs. </p>
-  </div>
-
-  <div class="dijk-talk info">
-    <p>
-    <div class="papername"> Verified Dijkstra in C </div>
-    APLAS SRC 2019, Bali </p>
-    <p> <a href={{ get_url(path="posters/dijk-poster.pdf" )}}>Poster</a>
-      &middot
-      <a href="slides/dijk-slides.pdf">Slides</a>
-    </p>
-  </div>
-
-  <div class="dijk-talk blurb">
-    <p> We identify and explain an overflow bug in
-      Dijkstra's algorithm. The precise bound in the relevant
-      precondition is nontrivial: we show that the intuitive guess
-      fails, and provide a workable refinement.
-      We demonstrate the bug and our fix with Coq proofs.
-      This work was developed into our CAV 2021 paper.
-    </p>
-  </div>
-
-</div>
-
-<div class="grid">
-
-  <div class="title info">
-    <p> Service </p>
-  </div>
-
-  <div class="title blurb">
-    <p> </p>
-  </div>
-
-  <div class="reviewer info">
-    <p class="papername"> External Reviewer </p>
-  </div>
-
-  <div class="reviewer blurb">
-    <p> <a href="https://etaps.org/2020/esop">ESOP 2020</a> </p>
-  </div>
-
-  <div class="instructor info">
-    <p class="papername"> Instructor </p>
-  </div>
-
-  <div class="instructor blurb">
-    <p> <a href="{{ get_url(path='@/course/_index.md') }}">CS 6001</a>, an onboarding course for first-year PhD students
-      at
-      Cornell
-      <br> New York State's <a href="https://www.nys4-h.org/career-explorations">4H CareerEx</a> program, Summer 2022
-      <br> Cornell's <a href="https://sites.google.com/view/grasshopratcornell/home">Grasshopr</a> program, Spring 2022
-    </p>
-
-  </div>
-
-
-</div>
-
-
 
 
 {% endblock content %}
