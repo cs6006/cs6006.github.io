@@ -336,7 +336,7 @@ I'll answer some of them here.
 
 </center>
 
-3. _I'm pretty sure my computer can count way past seven. What's up with that?_
+2. _I'm pretty sure my computer can count way past seven. What's up with that?_
 
     In the example, a computer has three digits and each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
     A modern computer actually has 64 digits, and so it can say 2<sup>64</sup> things.
@@ -363,7 +363,7 @@ I'll answer some of them here.
     In fact, it was the smallest number OCaml can handle.
 
     We have clever ways of checking for overflow, but here's the thing:
-    arithmetic accompanied by a special check for overflow is meaningfully more expensive than a plain arithmetic.
+    arithmetic accompanied by a special check for overflow is meaningfully more expensive than plain arithmetic.
     We want to run these special checks judiciously.
     As an analogy, consider a person who gives their car a 75-minute inspection every morning before driving ten minutes to work.
     They'll be safe, but they'll also be late.
