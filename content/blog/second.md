@@ -315,23 +315,10 @@ I designed the lesson plan above with some care, trying to tell no untruths and 
 No doubt there will be further questions.
 I'll answer some of them here.
 
-1. _I'm pretty sure my computer can count way past seven. What's up with that?_
 
-    In the example, a computer has three digits and each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
-    A modern computer actually has 64 digits, and so it can say 2<sup>64</sup> things.
-    That's 1.84 x 10<sup>19</sup>: more than there are grains of sand on Earth.
+1. _What about negative numbers?_
 
-    The average computer does not actually allow you to count that high:
-    it wants to save a good chunk of its signals for stuff besides numbers.
-    For instance, it needs a unique signal for each mathematical symbol, each mark of punctuation, each letter of the Roman alphabet,
-    each letter of _every other_ human script, for each emoji, and so on.
-    Even after allowing only a limited number of signals for numbers, we can still count pretty far:
-    the largest number my machine will (easily) let me count to is 4611686018427387903.
-    There are ways to count higher still, but that requires more fancy footwork.
-
-2. _What about negative numbers?_
-
-    In the example I simplified to positive numbers, so I was able to use my three digits to count from 0 to 7.
+    In the example I just used positive numbers, so I was able to use my three digits to count from 0 to 7.
     When we know we'll need negative numbers, the standard practice is to use the same signals to instead mean:
 
 <center>
@@ -348,6 +335,31 @@ I'll answer some of them here.
 | `BBB` | `111` | `3` |
 
 </center>
+
+2. _Whoa, but then how does a computer know if 000 means `-4` or `0`?_
+
+    Remember how we arrived at the matter of a protocol?
+    You could use an additional "tag" digit to say whether you were using the purely-positive protocol (ranging from `0` to `7`)
+    or this new fancy protocol that supports negative and positive numbers (ranging from `-4` to `3`).
+    For example, let's say 0 as the first digit means "purely-positive" and 1 means "negative and positive".
+    Then we could say <span style="color:red">0</span>000 for `0`, <span style="color:red">1</span>000 for `-4`, and so on.
+
+
+3. _I'm pretty sure my computer can count way past seven. What's up with that?_
+
+    In the example, a computer has three digits and each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
+    A modern computer actually has 64 digits, and so it can say 2<sup>64</sup> things.
+    That's 1.84 x 10<sup>19</sup>: more than there are grains of sand on Earth.
+
+    A computer cannot just dedicate all its signals to numbers, however.
+    For instance, it needs a unique signal for each mathematical symbol, each mark of punctuation, each letter of the Roman alphabet, each letter of _every other_ human script, for each emoji, and so on.
+    To keep track of whether to interpret a signal as a number or something else, it again uses the
+    "tag digits" trick we saw above.
+
+    In any case, the largest number my machine will (easily) let me count to is 4611686018427387903.
+    There are ways to count higher still, but that requires more fancy footwork.
+
+
 
 
 3. _Is this overflow business real? What do we do about it?_
