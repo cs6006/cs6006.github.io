@@ -336,36 +336,17 @@ I'll answer some of them here.
 
 </center>
 
-2. _Whoa, but then how does a computer know if 000 means `-4` or `0`?_
-
-    Remember how we arrived at the matter of a protocol?
-    You could use an additional "tag" digit to say whether you were using the purely-positive protocol (ranging from `0` to `7`)
-    or this new fancy protocol that supports negative and positive numbers (ranging from `-4` to `3`).
-    For example, let's say 0 as the first digit means "purely-positive" and 1 means "negative and positive".
-    Then we could say <span style="color:red">0</span>000 for `0`, <span style="color:red">1</span>000 for `-4`, and so on.
-
-
 3. _I'm pretty sure my computer can count way past seven. What's up with that?_
 
     In the example, a computer has three digits and each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
     A modern computer actually has 64 digits, and so it can say 2<sup>64</sup> things.
     That's 1.84 x 10<sup>19</sup>: more than there are grains of sand on Earth.
 
-    A computer cannot just dedicate all its signals to numbers, however.
-    For instance, it needs a unique signal for each mathematical symbol, each mark of punctuation, each letter of the Roman alphabet, each letter of _every other_ human script, for each emoji, and so on.
-    To keep track of whether to interpret a signal as a number or something else, it again uses the
-    "tag digits" trick we saw above.
-
-    In any case, the largest number my machine will (easily) let me count to is 4611686018427387903.
-    There are ways to count higher still, but that requires more fancy footwork.
-
-
-
 
 3. _Is this overflow business real? What do we do about it?_
 
     Oh it's real.
-    Consider the following code.
+    Consider the following code, written in a language called OCaml.
     My questions start with `#` and end with `;;`.  The computer's answers start with `- : int =`.
 
       ```
@@ -376,13 +357,13 @@ I'll answer some of them here.
       # min_int;;
       - : int = -4611686018427387904
       ```
-    First I asked my machine to please tell me the biggest number it can handle.
+    First I asked OCaml to please tell me the biggest number it can handle;
     Then I added one to it.
-    The answer was a rather small number; note that we've gone deeply negative.
-    In fact, it was the smallest number my machine can handle.
+    The answer was a rather _small_ number; note that we've gone deeply negative.
+    In fact, it was the smallest number OCaml can handle.
 
     We have clever ways of checking for overflow, but here's the thing:
-    addition accompanied by a check for overflow is meaningfully more expensive than a plain addition.
+    arithmetic accompanied by a special check for overflow is meaningfully more expensive than a plain arithmetic.
     We want to run these special checks judiciously.
     As an analogy, consider a person who gives their car a 75-minute inspection every morning before driving ten minutes to work.
     They'll be safe, but they'll also be late.
@@ -390,7 +371,7 @@ I'll answer some of them here.
 
     Yet another instance where the computer must tread a tightrope!
 
-    Sometimes, after analyzing a piece of code carefully, we're pretty sure that overflow _cannot possibly_ occur in that code, so we allow ourselves to skip the expensive checks.
+    Sometimes, after analyzing a piece of code carefully, we're pretty sure that overflow _cannot possibly_ occur in that code, so we allow ourselves to skip such checks.
     However, this analysis is tricky and we had better make sure we get them right.
     In 2021 I helped show that Dijkstra's algorithm, a classic algorithm that has been taught and used for over 60 years, can overflow in a way that was not previously known.
     I'll let you read all about that [here](https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37).
