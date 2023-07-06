@@ -84,6 +84,10 @@ a:hover {
     grid-column-gap: 0%;
   }
 
+  .gridblog {
+    width: 95%;
+  }
+
   .info,
   .blurb {
     align-self: center;

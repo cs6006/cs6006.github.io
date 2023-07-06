@@ -316,65 +316,68 @@ No doubt there will be further questions.
 I'll answer some of them here.
 
 
-1. _What about negative numbers?_
+#### What about negative numbers?
 
-    In the example I just used positive numbers, so I was able to use my three digits to count from 0 to 7.
-    When we know we'll need negative numbers, the standard practice is to use the same signals to instead mean:
+In the example I just used positive numbers, so I was able to use my three digits to count from 0 to 7.
+When we know we'll need negative numbers, we use the same signals to instead mean:
 
 <center>
 
 | Signal <br> (color) | Signal <br> (binary) <span style="color:white">they</span>| Number <br> (computer) |
 | :--- | :--- | --: |
-| `RRR`<span style="color:white">theythey</span> | `000` | `-4` |
-| `RRB` | `001` | `-3` |
-| `RBR` | `010` | `-2` |
-| `RBB` | `011` | `-1` |
-| `BRR` | `100` | `0` |
-| `BRB` | `101` | `1` |
-| `BBR` | `110` | `2` |
-| `BBB` | `111` | `3` |
+| `RRR`<span style="color:white">theythey</span> | `000` | `0` |
+| `RRB` | `001` | `1` |
+| `RBR` | `010` | `2` |
+| `RBB` | `011` | `3` |
+| `BRR` | `100` | `-4` |
+| `BRB` | `101` | `-3` |
+| `BBR` | `110` | `-2` |
+| `BBB` | `111` | `-1` |
 
 </center>
 
-2. _I'm pretty sure my computer can count way past seven. What's up with that?_
+Read more about that [here](https://en.wikipedia.org/wiki/Two%27s_complement#:~:text=Two's%20complement%20is%20a%20mathematical,number%20is%20positive%20or%20negative.)!
 
-    In the example, a computer has three digits and each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
-    A modern computer actually has 64 digits, and so it can say 2<sup>64</sup> things.
-    That's 1.84 x 10<sup>19</sup>: more than there are grains of sand on Earth.
+#### I'm pretty sure my computer can count way past seven. What's up with that?
+
+In the example, a computer has three digits and each digit can be either 0 or 1, and so it can say 2<sup>3</sup> = 8 things.
+A modern computer actually has 64 digits, and so it can say 2<sup>64</sup> things.
+That's 1.84 x 10<sup>19</sup>, more than there are grains of sand on Earth.
 
 
-3. _Is this overflow business real? What do we do about it?_
+#### Is this overflow business real? What do we do about it?
 
-    Oh it's real.
-    Consider the following code, written in a language called OCaml.
-    My questions start with `#` and end with `;;`.  The computer's answers start with `- : int =`.
+Oh it's real.
+Consider the following code, written in a language called OCaml.
+My questions start with `#` and end with `;;`.  The computer's answers start with `- : int =`.
 
-      ```
-      # max_int;;
-      - : int = 4611686018427387903
-      # 4611686018427387903 + 1;;
-      - : int = -4611686018427387904
-      # min_int;;
-      - : int = -4611686018427387904
-      ```
-    First I asked OCaml to please tell me the biggest number it can handle;
-    Then I added one to it.
-    The answer was a rather _small_ number; note that we've gone deeply negative.
-    In fact, it was the smallest number OCaml can handle.
+```
+# max_int;;
+- : int = 4611686018427387903
+# 4611686018427387903 + 1;;
+- : int = -4611686018427387904
+# min_int;;
+- : int = -4611686018427387904
+```
 
-    We have clever ways of checking for overflow, but here's the thing:
-    arithmetic accompanied by a special check for overflow is meaningfully more expensive than plain arithmetic.
-    We want to run these special checks judiciously.
-    As an analogy, consider a person who gives their car a 75-minute inspection every morning before driving ten minutes to work.
-    They'll be safe, but they'll also be late.
-    Checking the car before each big family road trip is probably enough.
+First I asked OCaml to please tell me the biggest number it can handle.
+Then I added one to it.
+The answer was a rather _small_ number; note that we've gone deeply negative.
+In fact, it was the smallest number OCaml can handle.
 
-    Yet another instance where the computer must tread a tightrope!
+We have clever ways of checking for overflow, but here's the thing:
+arithmetic accompanied by a special check for overflow is meaningfully more expensive than plain arithmetic.
+We want to run these special checks judiciously.
+As an analogy, consider a person who gives their car a 75-minute inspection every morning before driving ten minutes to work.
+They'll be safe, but they'll also be late.
+Checking the car before each big family road trip is probably enough.
 
-    Sometimes, after analyzing a piece of code carefully, we're pretty sure that overflow _cannot possibly_ occur in that code, so we allow ourselves to skip such checks.
-    However, this analysis is tricky and we had better make sure we get them right.
-    In 2021 I helped show that Dijkstra's algorithm, a classic algorithm that has been taught and used for over 60 years, can overflow in a way that was not previously known.
-    I'll let you read all about that [here](https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37).
+Yet another instance where the computer must tread a tightrope!
+
+Sometimes, after analyzing a piece of code carefully, we're pretty sure that overflow _cannot possibly_ occur in that code, so we allow ourselves to skip such checks.
+However, this analysis is tricky and we had better make sure we get them right.
+In 2021 I helped show that Dijkstra's algorithm, a classic algorithm that has been taught and used for over 60 years, can overflow in a way that was not previously known.
+I'll let you read all about that [here](https://link.springer.com/chapter/10.1007/978-3-030-81688-9_37).
 
 
 
