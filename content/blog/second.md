@@ -8,20 +8,20 @@ prettydate = "July 2, 2023"
 +++
 
 Little kids use computers all the time.
-Increasingly early in their schooling, they also learn how to code.
-However, is writing code on a computer the best way to teach computing? I think not.
+Increasingly early in their schooling, they also learn how to write code.
+However, learning about computing entails more than just learning to code.
 
+Jumping straight into code has its drawbacks.
 A first attempt at writing code is often frustrating because the computer feels like an obtuse, unreasonable entity that just does things a certain way.
 Because it wants to; because it can.
-Memorize it and deal with it.
+The best one can do is to memorize this behavior and deal with it.
 At worst, the computer becomes the adversary.
 At best, it becomes an eccentric and unreliable teammate with whom we have somehow learned to collaborate.
 
-I think kids need to understand, even empathize with, a computer before they begin to code.
-Why does a computer do things the way it does?
-What compels it, and what limits it?
-Some of these ideas are captured by the term [computational thinking](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf), due to Jeannette Wing.
-In a series of four lessons, I taught twenty first-graders at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm) to think computationally.
+[Computational thinking](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf), a cool new idea from Jeannette Wing, argues that people need to understand how a computer thinks, what compels it, and what limits it.
+I think it's possible, and worthwhile, to introduce these ideas to our youngest students, even before they learn to code.
+I have a fun idea for how to introduce the concept of binary numbers to first-graders in a way that is interactive, physically embodied, and exciting for kids.
+I executed these ideas over a series of four lessons at [Beverly J Martin Elementary](https://www.ithacacityschools.org/bjm), and this is my lesson plan.
 
 
 
@@ -227,9 +227,10 @@ They started off strong, but then, at ten, ran out of fingers.
 Some of them counted a toe, but most just contented themselves with calling me a naughty man again.
 I explained that a computer sometimes has a similar problem: it wants to keep going but it runs out of ways of holding on to information, just like running out of fingers to count or cards to signal with.
 
-I requested a volunteer, and they and I stood up front facing the class.
-We were on a number line, both currently at 0.
-They were a person, and I was a computer.
+I requested a volunteer, and they and I stood in front of the room facing the class.
+I told the class that we were both on a number line running across the front of the room.
+We were both currently at 0.
+My volunteer would count like a person, while I would count like a computer.
 
 <center>
 
@@ -290,7 +291,8 @@ There was a little riot. Once we had settled down, I asked them to look at their
 
 </center>
 
-What was a poor computer to do? I had simply run out of unique signals after 7, and I wanted to do something reasonable, so I had wrapped around to 0.
+What was a poor computer to do?
+I had simply run out of unique signals after 7, and I wanted to do something reasonable, so I had wrapped around to 0.
 
 I explained that a computer does the same thing, and that it is called _overflow_.
 By and large, the largest number that a computer can express, plus one, is the smallest number it can express.
@@ -305,7 +307,7 @@ Hmm, there's a bunch of stuff that we're allowed to do at zero miles an hour:
 we're allowed to unbuckle our seatbelts, open the door, step out for ice-cream.
 Doing this at eight miles per hour is a bad idea, and we know it.
 
-With this (and an impromptu group hug), we wrapped up.
+With this, we wrapped up.
 I like to think that my students left with a little more empathy for the computer, and all the little hoops it needs to jump through while it does our bidding.
 
 
@@ -319,7 +321,7 @@ I'll answer some of them here.
 #### What about negative numbers?
 
 In the example I just used positive numbers, so I was able to use my three digits to count from 0 to 7.
-When we know we'll need negative numbers, we use the same signals to instead mean:
+When we know we'll need negative numbers, we commonly use the same signals to instead mean:
 
 <center>
 
@@ -336,7 +338,9 @@ When we know we'll need negative numbers, we use the same signals to instead mea
 
 </center>
 
-Read more about that [here](https://en.wikipedia.org/wiki/Two%27s_complement#:~:text=Two's%20complement%20is%20a%20mathematical,number%20is%20positive%20or%20negative.)!
+As you know, we are at liberty to choose any eight numbers we like.
+The choice I've shown above may feel rather obscure, but it is actually a very clever way of representing negative numbers.
+Read more about that [here](https://en.wikipedia.org/wiki/Two%27s_complement)!
 
 #### I'm pretty sure my computer can count way past seven. What's up with that?
 
@@ -362,7 +366,7 @@ My questions start with `#` and end with `;;`.  The computer's answers start wit
 
 First I asked OCaml to please tell me the biggest number it can handle.
 Then I added one to it.
-The answer was a rather _small_ number; note that we've gone deeply negative.
+The answer was a rather _small_ number; note that weve gone deeply negative.
 In fact, it was the smallest number OCaml can handle.
 
 We have clever ways of checking for overflow, but here's the thing:
