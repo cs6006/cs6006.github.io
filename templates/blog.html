@@ -4,11 +4,11 @@
 
 <div class="grid">
 
-  <div class="title" id="title">
+  <div class="title">
     <p style="text-align: left"> Blog </p>
   </div>
 
-  <div class="title" id="title">
+  <div class="title">
     <p style="text-align: right">
       <a style="color: #ff8080" ; href={{ get_url(path="@/front/_index.md" )}}>Home</a>
     </p>
@@ -18,25 +18,18 @@
 
 <br><br>
 
-{% for page in section.pages %}
-
 <div class="gridblog">
-
-  <div class="info">
-  </div>
-  <div class="blurb">
+  {% for page in section.pages %}
+  <div>
     {{ page.extra.prettydate }} <br>
-    <span class="papername" id="{{ page.slug }}">
+    <span class="subheading" id="{{ page.slug }}">
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
     </span>
     <br>
     <em> {{ page.description }} </em>
   </div>
   <br>
+  {% endfor %}
 </div>
-
-{% endfor %}
-
-
 
 {% endblock content %}

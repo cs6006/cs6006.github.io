@@ -18,40 +18,38 @@
 
 <div class="grid">
 
-  <div class="title info">
+  <div class="info title">
     <p> Essentials</p>
   </div>
 
-  <div class="title blurb">
-    <p> </p>
-  </div>
+  <div></div>
 
-  <div class="blog info papername">
+  <div class="info subheading">
     <p>Instructors</p>
   </div>
 
-  <div class="blog blurb">
+  <div>
     <p> Jacqueline Maasch &middot; New York &middot; maasch&#9424cs.cornell.edu <br>
       <a href="https://www.cs.cornell.edu/~amohan/">Anshuman Mohan</a> &middot; Ithaca &middot;
       amohan&#9424cs.cornell.edu
     </p>
   </div>
 
-  <div class="blog info papername">
+  <div class="info subheading">
     <p>When and where</p>
   </div>
 
-  <div class="blog blurb">
+  <div>
     <p> Mondays, 12:20pm - 1:10pm <br>
       Ithaca: Gates 310 <br>
       New York: Bloomberg 497 </p>
   </div>
 
-  <div class="blog info papername">
+  <div class="info subheading">
     <p>Credits and grading</p>
   </div>
 
-  <div class="blog blurb">
+  <div>
     <p> One credit; available with an S/U option only</p>
   </div>
 </div>
@@ -63,30 +61,27 @@
     <p> Tentative Schedule</p>
   </div>
 
-  <div class="title blurb">
-    <p> </p>
-  </div>
+  <div></div>
 </div>
 
 
-{% for page in section.pages | reverse %}
 
 <div class="grid">
+  {% for page in section.pages | reverse %}
 
   <div class=" info">
     <p> {{ page.extra.prettydate }} </p>
   </div>
 
-  <div class="papername blurb">
-    <p> <span class="" id="{{ page.slug }}">
+  <div class="subheading">
+    <p> <span id="{{ page.slug }}">
         <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        <!-- Once we have descriptions in the lesson files,
+             we can display them here using `page.description`. -->
       </span> </p>
   </div>
+
+  {% endfor %}
 </div>
-
-
-{% endfor %}
-
-<br><br><br><br>
 
 {% endblock content %}
