@@ -3,12 +3,11 @@
 {% block content %}
 
 <div class="gridblog">
+  <div></div>
 
   <div class="title">
     <p style="text-align: right">
-      <a style="color: #ff8080" ; href={{ get_url(path="@/blog/_index.md" )}}>Blog</a>
-      &middot
-      <a style="color: #ff8080" ; href={{ get_url(path="@/front/_index.md" )}}>Home</a>
+      CS 6001
     </p>
   </div>
 
@@ -18,7 +17,6 @@
   <em> {{ page.description }} </em>
   <br>
   {{ page.content | safe }}
-  <br><br>
 </div>
 
 {% endblock content %}
