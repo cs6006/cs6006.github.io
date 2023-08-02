@@ -1,6 +1,6 @@
-### This is source code for the CS6006 [website](https://cs6006.github.io/).
+### This is source code for the CS 6006 [website](https://cs6006.github.io/).
 
-CS 6006 is a new onboarding course offered to graduate students at Cornell Computer Science.
+_CS 6006: Succeeding in the Graduate Environment_ is a new onboarding course offered to graduate students at Cornell Computer Science.
 
 The website is powered by [Zola](https://www.getzola.org/).
 
