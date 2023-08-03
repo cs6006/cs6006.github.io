@@ -40,6 +40,14 @@ a:hover {
   grid-column-gap: 5%;
 }
 
+.gridtitle {
+  margin: auto;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-column-gap: 5%;
+}
+
 .gridblog {
   margin: auto;
   width: 75%;
@@ -83,6 +91,10 @@ a:hover {
   }
 
   .gridblog {
+    width: 95%;
+  }
+
+  .gridtitle {
     width: 95%;
   }
 
