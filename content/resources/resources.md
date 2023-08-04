@@ -8,19 +8,10 @@ prettydate = ""
 
 ## People
 
-### Ithaca
+### In Ithaca
 
-- Becky Stewart, `rebecca.stewart@cornell.edu`
-
-  _Associate Director of MS and PhD programs_
-
-- Melody Padgett, `mlp57@cornell.edu`
-
-  _MS and PhD Program Assistant_
-
-
-
-
+- Becky Stewart // `rebecca.stewart@cornell.edu` // _Associate Director of MS and PhD programs_
+- Melody Padgett // `mlp57@cornell.edu` // _MS and PhD Program Assistant_
 
 
 ## The hidden curriculum
