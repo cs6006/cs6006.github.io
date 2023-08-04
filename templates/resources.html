@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="gridtitle">
+  <div class="title">
+    <p style="text-align: left"> <a style="color: #ff8080" ; href={{ get_url(path="@/_index.md" )}}>CS 6006: Succeeding
+        in the Graduate Environment</a> </p>
+  </div>
+  <div></div>
+</div>
+
+
+<div class="gridblog">
+
+  <p>{{ page.extra.prettydate }} </p>
+  <span class="title" style="text-align: left;"> {{ page.title }} </span>
+  <em> {{ page.description }} </em>
+  <br>
+  {{ page.content | safe }}
+</div>
+
+{% endblock content %}
