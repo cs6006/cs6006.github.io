@@ -6,6 +6,23 @@ description = ""
 prettydate = ""
 +++
 
+## People
+
+### Ithaca
+
+- Becky Stewart, `rebecca.stewart@cornell.edu`
+
+  _Associate Director of MS and PhD programs_
+
+- Melody Padgett, `mlp57@cornell.edu`
+
+  _MS and PhD Program Assistant_
+
+
+
+
+
+
 ## The hidden curriculum
 
 ### Internal resources
@@ -38,7 +55,7 @@ Along with area-specific newsletters compiled for the various research niches in
 - [How to host your website on Cornell's CS Department web servers](https://it.coecis.cornell.edu/cis/cisweb/)
 - This will lead to the creation of your personal website under cs.cornell.edu/~username.
 This is different from your alphanumeric NetID and your numeric Cornell ID.
-You should have received a username via IT during the summer before you matriculated. If you don't have one, contact Becky Stewart (rebecca.stewart@cornell.edu).
+You should have received a username via IT during the summer before you matriculated. If you don't have one, contact Becky Stewart.
 
 ## Using the connection between Ithaca and Cornell Tech
 
