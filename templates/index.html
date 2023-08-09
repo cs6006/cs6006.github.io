@@ -58,7 +58,7 @@
 
   <div>
     <p> <a href={{ get_url(path="@/resources/resources.md" )}}>
-        A list of resources you may find broadly useful all semester</a>
+        A list of resources you may find useful all semester</a>
     </p>
   </div>
 </div>
@@ -83,13 +83,14 @@
     <p> {{ page.extra.prettydate }} </p>
   </div>
 
-  <div class="subheading">
-    <p> <span id="{{ page.slug }}">
+  <div>
+    <p class="subheading"> <span id="{{ page.slug }}">
         <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-        <!-- Once we have descriptions in the lesson files,
-             we can display them here using `page.description`. -->
       </span> </p>
+    <p> <em> {{ page.extra.presenter }} </em> </p>
+
   </div>
+
 
   {% endfor %}
 </div>
