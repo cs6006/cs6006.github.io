@@ -61,6 +61,7 @@
         A list of resources you may find useful all semester</a>
     </p>
   </div>
+  <br><br><br>
 </div>
 
 
@@ -79,20 +80,22 @@
   {% for page in section.pages | reverse %}
 
 
-  <div class=" info">
+  <div class="info">
     <p> {{ page.extra.prettydate }} </p>
   </div>
 
   <div>
-    <p class="subheading"> <span id="{{ page.slug }}">
-        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-      </span> </p>
-    <p> <em> {{ page.extra.presenter }} </em> </p>
+    <span class="subheading" id="{{ page.slug }}">
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    </span> <br>
+    <em> {{ page.extra.presenter }} </em> </span>
 
   </div>
 
 
   {% endfor %}
 </div>
+
+<br><br><br><br><br>
 
 {% endblock content %}

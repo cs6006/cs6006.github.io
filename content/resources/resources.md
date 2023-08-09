@@ -4,7 +4,7 @@ date = 2023-08-04
 description = ""
 [extra]
 prettydate = ""
-presenter = ""
+presenter = "Compiled by Jacqueline Maasch and Anshuman Mohan"
 +++
 
 ## People
