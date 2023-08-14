@@ -4,6 +4,7 @@ date = 2023-08-04
 description = ""
 [extra]
 prettydate = ""
+presenter = "Compiled by Jacqueline Maasch and Anshuman Mohan"
 +++
 
 ## People
@@ -45,7 +46,7 @@ Along with area-specific newsletters compiled for the various research niches in
 
 - [How to host your website on Cornell's CS Department web servers](https://it.coecis.cornell.edu/cis/cisweb/)
 - This will lead to the creation of your personal website under cs.cornell.edu/~username.
-This is different from your alphanumeric NetID and your numeric Cornell ID.
+This username is different from your alphanumeric NetID and your numeric Cornell ID.
 You should have received a username via IT during the summer before you matriculated. If you don't have one, contact Becky Stewart.
 
 ## Using the connection between Ithaca and Cornell Tech

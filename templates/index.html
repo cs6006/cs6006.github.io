@@ -24,12 +24,11 @@
   <div></div>
 
   <div class="info subheading">
-    <p>Instructors</p>
+    <p>Instructor</p>
   </div>
 
   <div>
-    <p> Jacqueline Maasch &middot; New York &middot; maasch&#9424cs.cornell.edu <br>
-      <a href="https://www.cs.cornell.edu/~amohan/">Anshuman Mohan</a> &middot; Ithaca &middot;
+    <p> <a href="https://www.cs.cornell.edu/~amohan/">Anshuman Mohan</a> &middot; Gates 407 &middot;
       amohan&#9424cs.cornell.edu
     </p>
   </div>
@@ -58,16 +57,28 @@
 
   <div>
     <p> <a href={{ get_url(path="@/resources/resources.md" )}}>
-        A list of resources you may find broadly useful all semester</a>
+        A list of resources you may find useful all semester</a>
     </p>
   </div>
+
+  <div class="info subheading">
+    <p>Development</p>
+  </div>
+
+  <div>
+    <p> This course was developed in the summer of 2023 by <br>
+      Jacqueline Maasch (at Cornell Tech; maasch&#9424cs.cornell.edu) and Anshuman <br>
+    </p>
+  </div>
+
+  <br><br><br>
 </div>
 
 
 <div class="grid">
 
   <div class="title info">
-    <p> Tentative Schedule </p>
+    <p> Schedule </p>
   </div>
 
   <div></div>
@@ -79,19 +90,22 @@
   {% for page in section.pages | reverse %}
 
 
-  <div class=" info">
+  <div class="info">
     <p> {{ page.extra.prettydate }} </p>
   </div>
 
-  <div class="subheading">
-    <p> <span id="{{ page.slug }}">
-        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-        <!-- Once we have descriptions in the lesson files,
-             we can display them here using `page.description`. -->
-      </span> </p>
+  <div>
+    <span class="subheading" id="{{ page.slug }}">
+      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    </span> <br>
+    <em> {{ page.extra.presenter }} </em> </span>
+
   </div>
+
 
   {% endfor %}
 </div>
+
+<br><br><br><br><br>
 
 {% endblock content %}
