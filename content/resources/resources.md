@@ -14,6 +14,11 @@ presenter = "Compiled by Jacqueline Maasch and Anshuman Mohan"
 - Becky Stewart // `rebecca.stewart@cornell.edu` // _Associate Director of MS and PhD programs_
 - Melody Padgett // `mlp57@cornell.edu` // _MS and PhD Program Assistant_
 
+### In NYC
+
+- [Jacqueline Klein](https://tech.cornell.edu/people/jacqueline-klein/) // `jk886@cornell.edu` // Associate Dean for Faculty Affairs, Senior Director or Student & Academic Affairs
+- Lauren Zehner // `lmz24@cornell.edu` // Assistant Director of Student & Academic Affairs
+- [Cornell Tech Student & Academic Affairs](https://studentaffairs.tech.cornell.edu/about-student-services/who-we-are/) // `studentaffairs@tech.cornell.edu`
 
 ## The hidden curriculum
 
