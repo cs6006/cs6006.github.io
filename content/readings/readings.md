@@ -12,6 +12,12 @@ presenter = "Compiled by Jacqueline Maasch and Anshuman Mohan"
 - [Empowering First-Year Computer Science Ph.D. Students to Create a Culture that Values Community and Mental Health](https://arxiv.org/pdf/2208.12650.pdf) (Yacoby et al. 2023)
 -  [Mor Naaman's PhD Syllabus](https://s.tech.cornell.edu/phd-syllabus/) (Cornell Tech)
 
+## Broader impacts of computer science research
+
+### Climate change and sustainability
+
+- [Tackling Climate Change with Machine Learning](https://dl.acm.org/doi/pdf/10.1145/3485128) (Rolnick et al. 2022, _ACM Computing Surveys_)
+
 ## Diversity, inclusion, and exclusion in engineering professions
 
 - [A Narrative Analysis of Black, Latino/a/x, and Indigenous Students' Sense of Belonging in Engineering at a Predominantly White Institution](https://peer.asee.org/a-narrative-analysis-of-black-latino-a-x-and-indigenous-students-sense-of-belonging-in-engineering-at-a-predominantly-white-institution) (Dorve-Lewis et al. 2023, _American Society for Engineering Education_)
