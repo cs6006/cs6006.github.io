@@ -1,5 +1,5 @@
 +++
-title = "Setting and Managing Expectations"
+title = "Setting and managing expectations"
 date = 2023-10-16
 description = ""
 [extra]

@@ -1,5 +1,5 @@
 +++
-title = "The Societal Impact of Technology"
+title = "The societal impact of technology"
 date = 2023-10-02
 description = ""
 [extra]

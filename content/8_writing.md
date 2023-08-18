@@ -1,5 +1,5 @@
 +++
-title = "Academic Writing"
+title = "Academic writing"
 date = 2023-10-30
 description = ""
 [extra]

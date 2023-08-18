@@ -1,5 +1,5 @@
 +++
-title = "Giving a Professional Talk"
+title = "Giving a professional talk"
 date = 2023-10-23
 description = ""
 [extra]
