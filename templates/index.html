@@ -113,10 +113,12 @@
 
   <div>
     <span class="subheading" id="{{ page.slug }}">
-      {% if page.extra.link %}
+      {% if page.extra.link_to_page %}
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      {% elif page.extra.link_to_admin %}
+      <a href={{ get_url(path="slides/admin.pdf" )}}>{{ page.title }}</a>
       {% else %}
-      {{ page.title }}</a>
+      {{ page.title }}
       {% endif %}
     </span> <br>
     <em> {{ page.extra.presenter }} </em> </span>

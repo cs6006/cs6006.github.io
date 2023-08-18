@@ -5,7 +5,7 @@ description = ""
 [extra]
 prettydate = "September 25"
 presenter = "Farhana Shahid and Jacqueline Maasch"
-link = "yes"
+link_to_page = "yes"
 +++
 
 ## Internal resources
