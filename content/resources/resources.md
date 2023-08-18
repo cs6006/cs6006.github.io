@@ -20,6 +20,20 @@ presenter = "Compiled by Jacqueline Maasch and Anshuman Mohan"
 - Lauren Zehner // `lmz24@cornell.edu` // _Assistant Director of Student & Academic Affairs_
 - [Cornell Tech Student & Academic Affairs](https://studentaffairs.tech.cornell.edu/about-student-services/who-we-are/) // `studentaffairs@tech.cornell.edu`
 
+
+## Working Environment
+
+### IT Support
+
+When you need IT support, contact the College of Engineering's ITSG and not the University-wide IT Support Desk. Do so by filing a ticket [here](https://it.coecis.cornell.edu/). This applies to both campuses.
+
+### Facilities Support
+
+When you need non-technical facilities support around campus, file a ticket with Facilities.
+- Gates Hall or Rhodes Hall: file a ticket [here](https://tdx.cornell.edu/TDClient/171/Portal/Home/).
+- A different building overseen by the College of Engineering: file a ticket [here](https://tdx.cornell.edu/TDClient/133/Portal/Home/).
+
+
 ## The hidden curriculum
 
 ### Internal resources

@@ -14,18 +14,18 @@ This session approaches the hidden curriculum through a wellness lens. Our physi
 
 The following internal resources can help you stay informed of your rights, benefits, and pay at Cornell.
 
-#### Employment rights and benefits
+### Employment rights and benefits
 
 - Know your graduate student union: [Cornell Graduate Students United](https://cornellgradunion.org/)
 - Know your vacation rights: [Vacation policy for Cornell graduate students](https://gradschool.cornell.edu/policies/vacation-time-for-assistantships/)
 
-#### Healthcare
+### Healthcare
 
 - Know your health benefits: [Student Health Benefits Enrollment & Coverage](https://studenthealthbenefits.cornell.edu/enrollment-coverage)
 - [Mental Health Care at Cornell (Ithaca)](https://health.cornell.edu/services/mental-health-care)
 - [Mental Health Care at Cornell Tech (NYC)](https://studentaffairs.tech.cornell.edu/health-wellness/nyc-health-resources/)
 
-##### Getting healthcare in Ithaca
+#### Getting healthcare in Ithaca
 
 - Primary Care: [Cornell Health on Ho Plaza](https://health.cornell.edu/); call them on 607-255-5155 to make an appointment
 - Urgent care, or care outside of Cornell Health's hours:
@@ -36,21 +36,11 @@ The following internal resources can help you stay informed of your rights, bene
 - Dental: Similarly, you can enroll in Metlife dental insurance through Cornell. Again, this is open for only a few months of the year. See [here](https://studenthealthbenefits.cornell.edu/dental-vision/dental-enrollment) for more.
 
 
-#### Finances
+### Finances
 
 - Know your pay: [Cornell stipend rates](https://gradschool.cornell.edu/financial-support/stipend-rates/)
 - Know your tax information: [Graduate School Tax Information](https://gradschool.cornell.edu/financial-support/tax-information/)
 - [Internal travel funding](https://www.cs.cornell.edu/phd/current-students/travel-funding-opportunities)
-
-#### IT Support
-
-When you need IT support, contact the College of Engineering's ITSG and not the University-wide IT Support Desk. Do so by filing a ticket [here](https://it.coecis.cornell.edu/). This applies to both campuses.
-
-#### Facilities Support
-
-When you need non-technical facilities support around campus, file a ticket with Facilities.
-- Gates Hall or Rhodes Hall: file a ticket [here](https://tdx.cornell.edu/TDClient/171/Portal/Home/).
-- A different building overseen by the College of Engineering: file a ticket [here](https://tdx.cornell.edu/TDClient/133/Portal/Home/).
 
 
 ## External resources
