@@ -16,7 +16,7 @@ presenter = "Compiled by Jacqueline Maasch and Anshuman Mohan"
 
 ### In NYC
 
-- [Jacqueline Klein](https://tech.cornell.edu/people/jacqueline-klein/) // `jk886@cornell.edu` // _Senior Director of Student & Academic Affairs_
+- [Jacqueline Klein](https://tech.cornell.edu/people/jacqueline-klein/) // `jk886@cornell.edu` // _Assistant Dean of Graduate Education_
 - Lauren Zehner // `lmz24@cornell.edu` // _Assistant Director of Student & Academic Affairs_
 - [Cornell Tech Student & Academic Affairs](https://studentaffairs.tech.cornell.edu/about-student-services/who-we-are/) // `studentaffairs@tech.cornell.edu`
 
