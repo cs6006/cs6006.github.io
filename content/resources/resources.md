@@ -11,8 +11,10 @@ presenter = "Compiled by Jacqueline Maasch and Anshuman Mohan"
 
 ### In Ithaca
 
-- Becky Stewart // `rebecca.stewart@cornell.edu` // _Associate Director of MS and PhD programs_
+- Rebecca Stewart // `rebecca.stewart@cornell.edu` // _Associate Director of MS and PhD programs_
 - Melody Padgett // `mlp57@cornell.edu` // _MS and PhD Program Assistant_
+- Randy Hess // `rbh27@cornell.edu` // _Purchasing Assistant_
+
 
 ### In NYC
 
