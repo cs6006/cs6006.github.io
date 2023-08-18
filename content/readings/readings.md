@@ -1,5 +1,5 @@
 +++
-title = "Readings on the graduate and professional experience in engineering fields"
+title = "Readings on the graduate experience in engineering fields"
 date = 2023-08-04
 description = ""
 [extra]

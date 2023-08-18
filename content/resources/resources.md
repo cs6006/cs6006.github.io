@@ -1,5 +1,5 @@
 +++
-title = "General resources that will serve you well all semester"
+title = "Resources you may find useful all semester"
 date = 2023-08-04
 description = ""
 [extra]
