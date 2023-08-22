@@ -1,5 +1,5 @@
 +++
-title = "Active citizenship"
+title = "Being an active citizen while in graduate school"
 date = 2023-11-13
 description = ""
 [extra]
