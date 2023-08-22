@@ -11,6 +11,7 @@ presenter = "Compiled by Jacqueline Maasch and Anshuman Mohan"
 
 - [Empowering First-Year Computer Science Ph.D. Students to Create a Culture that Values Community and Mental Health](https://arxiv.org/pdf/2208.12650.pdf) (Yacoby et al. 2023)
 -  [Mor Naaman's PhD Syllabus](https://s.tech.cornell.edu/phd-syllabus/) (Cornell Tech)
+- Recommended readings on the [Cornell CS Wiki: Guide to a PhD](https://wiki.cs.cornell.edu/index.php?title=Guide_to_a_Ph.D._Articles)
 
 ## Broader impacts of computer science research
 

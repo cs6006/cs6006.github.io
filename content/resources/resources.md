@@ -34,7 +34,7 @@ When you need IT support, contact the College of Engineering's ITSG and not the 
 When you need non-technical facilities support around campus, file a ticket with Facilities.
 - Gates Hall or Rhodes Hall: file a ticket [here](https://tdx.cornell.edu/TDClient/171/Portal/Home/).
 - A different building overseen by the College of Engineering: file a ticket [here](https://tdx.cornell.edu/TDClient/133/Portal/Home/).
-
+- Cornell Tech facilities can be reached at `facilities@tech.cornell.edu`.
 
 ## The hidden curriculum
 
@@ -54,6 +54,8 @@ Check out the extensive reading recommendations provided by PhD professionalizat
 
 ## Keeping up with the field
 
+### News
+
 Along with area-specific newsletters compiled for the various research niches in CS, these general resources can help you keep pace with research news.
 
 - [arXiv daily listing emails](https://info.arxiv.org/help/subscribe.html#subscribe-to-daily-listing-emails)
@@ -62,6 +64,14 @@ Along with area-specific newsletters compiled for the various research niches in
 - [Google alerts](https://support.google.com/websearch/answer/4815696?hl=en)
 - [Academics on Mastodon](https://github.com/nathanlesage/academics-on-mastodon)
 
+There are too many curated newsletters available to list here, but we recommend searching out the ones that are most relevant for your needs.
+
+### Rankings
+
+Quantifying the impact of conferences, journals, and institutions is a fraught endeavor, but sometimes metrics can be a useful starting point when you are new to a field.
+
+- Still getting to know the top venues in your research area? Google Scholar provides a [ranking of publications by area](https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng). These can be filtered by _subcategory_. This can be a reference point, but take these metrics with a grain of salt!
+- Likewise, [CSRankings](https://csrankings.org/#/index?all&us) provides metrics on institutions around the world by CS research area. Again, take these metrics with a grain of salt!
 
 ## Creating a personal website
 
@@ -69,6 +79,7 @@ Along with area-specific newsletters compiled for the various research niches in
 - This will lead to the creation of your personal website under cs.cornell.edu/~username.
 This username is different from your alphanumeric NetID and your numeric Cornell ID.
 You should have received a username via IT during the summer before you matriculated. If you don't have one, contact Becky Stewart.
+- [GitHub Pages](https://pages.github.com/) is a very low-overhead option for freely hosting websites via GitHub repositories. We highly recommend this route if you want to quickly and simply launch a personal site. 
 
 ## Using the connection between Ithaca and Cornell Tech
 
