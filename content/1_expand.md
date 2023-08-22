@@ -1,5 +1,5 @@
 +++
-title = "How to expand your research profile"
+title = "Expanding your research profile"
 date = 2023-08-28
 description = ""
 [extra]
