@@ -119,6 +119,8 @@
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
       {% elif page.extra.link_to_admin %}
       <a href={{ get_url(path="slides/admin.pdf" )}}>{{ page.title }}</a>
+      {% elif page.extra.link_to_pierson %}
+      <a href={{ get_url(path="slides/pierson.pdf" )}}>{{ page.title }}</a>
       {% else %}
       {{ page.title }}
       {% endif %}

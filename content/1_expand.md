@@ -5,4 +5,5 @@ description = ""
 [extra]
 prettydate = "August 28"
 presenter = "Emma Pierson"
+link_to_pierson = "yes"
 +++
