@@ -5,4 +5,5 @@ description = ""
 [extra]
 prettydate = "October 23"
 presenter = "David Bindel"
+link_to_bindel = "yes"
 +++

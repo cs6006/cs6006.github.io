@@ -121,6 +121,10 @@
       <a href={{ get_url(path="slides/admin.pdf" )}}>{{ page.title }}</a>
       {% elif page.extra.link_to_pierson %}
       <a href={{ get_url(path="slides/pierson.pdf" )}}>{{ page.title }}</a>
+      {% elif page.extra.link_to_damle %}
+      <a href={{ get_url(path="slides/damle.pdf" )}}>{{ page.title }}</a>
+      {% elif page.extra.link_to_bindel %}
+      <a href={{ get_url(path="slides/bindel.pdf" )}}>{{ page.title }}</a>
       {% else %}
       {{ page.title }}
       {% endif %}

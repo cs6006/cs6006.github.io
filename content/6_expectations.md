@@ -5,4 +5,5 @@ description = ""
 [extra]
 prettydate = "October 16"
 presenter = "Bharath Hariharan"
+link_to_hariharan = "yes"
 +++
