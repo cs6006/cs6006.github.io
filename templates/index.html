@@ -10,7 +10,7 @@
 
   <div class="title">
     <p style="text-align: right"> <a style="color: #ff8080" ; href="https://www.cs.cornell.edu/">Cornell CS</a> <br>
-      Fall 2023 </p>
+      Fall 2026 </p>
   </div>
 
 </div>
@@ -38,8 +38,9 @@
 
   <div>
     <p> Mondays, 12:20pm - 1:10pm <br>
-      Ithaca: Gates 310 <br>
+      Ithaca: CIS 350 <br>
       New York: Bloomberg 497 </p>
+    <p> The room is booked starting 11:50 so you can BYO lunch and get to know your cohort! </p>
   </div>
 
   <div class="info subheading">
@@ -47,7 +48,8 @@
   </div>
 
   <div>
-    <p> Fridays, 9-10am &middot; Gates 341 and on Zoom </p>
+    <p> Thursdays, 2-3pm &middot; Gates 339 and on <a
+        href="https://cornell.zoom.us/j/6107916126?pwd=ajVOd2RPMVFDQkk4anRKWEZoa0w2dz09">Zoom</a> </p>
   </div>
 
   <div class="info subheading">
@@ -79,14 +81,12 @@
   </div>
 
   <div class="info subheading">
-    <p>Development</p>
+    <p>Past editions</p>
   </div>
 
   <div>
-    <p> This course was developed in the summer of 2023 by <br>
-      Jacqueline Maasch (at Cornell Tech; maasch&#9424cs.cornell.edu) <br>
-      and Anshuman Mohan. Got a suggestion? File an <a
-        href="https://github.com/cs6006/cs6006.github.io/issues/new">issue</a>!
+    <p> <a href={{ get_url(path="@/archive/archive.md" )}}>
+        Archive of previous offerings of CS 6006 </a>
     </p>
   </div>
 
@@ -114,23 +114,15 @@
   </div>
 
   <div>
-    <span class="subheading" id="{{ page.slug }}">
+    <span class="subheading{% if page.extra.tentative %} muted{% endif %}" id="{{ page.slug }}">
       {% if page.extra.link_to_page %}
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-      {% elif page.extra.link_to_admin %}
-      <a href={{ get_url(path="slides/admin.pdf" )}}>{{ page.title }}</a>
-      {% elif page.extra.link_to_pierson %}
-      <a href={{ get_url(path="slides/pierson.pdf" )}}>{{ page.title }}</a>
-      {% elif page.extra.link_to_damle %}
-      <a href={{ get_url(path="slides/damle.pdf" )}}>{{ page.title }}</a>
-      {% elif page.extra.link_to_bindel %}
-      <a href={{ get_url(path="slides/bindel.pdf" )}}>{{ page.title }}</a>
       {% else %}
       {{ page.title }}
       {% endif %}
     </span> <br>
-    <em> {{ page.extra.presenter }} </em> </span>
-
+    {% if page.extra.presenter %}<em> {{ page.extra.presenter }} </em>{% endif %}
+    {% if page.extra.note %}<br><span class="muted note"> {{ page.extra.note }} </span>{% endif %}
   </div>
 
 

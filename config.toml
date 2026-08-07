@@ -10,9 +10,8 @@ compile_sass = true
 build_search_index = false
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+# Syntax highlighting is off by default. To turn it on, add a
+# [markdown.highlighting] table here (Zola 0.21 and later).
 
 [extra]
 # Put all your custom variables here

@@ -15,7 +15,8 @@
 
   <p>{{ page.extra.prettydate }} </p>
   <span class="title" style="text-align: left;"> {{ page.title }} </span>
-  <em> {{ page.extra.presenter }} </em>
+  {% if page.extra.presenter %}<em> {{ page.extra.presenter }} </em>{% endif %}
+  {% if page.extra.note %}<br><span class="muted note"> {{ page.extra.note }} </span>{% endif %}
   <br>
   {{ page.content | safe }}
 </div>

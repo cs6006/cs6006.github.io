@@ -50,7 +50,6 @@ Check out the extensive reading recommendations provided by PhD professionalizat
 ](https://yanivyacoby.github.io/harvard-cs290/readings/)
   - Observations from teaching this course are summarized in the paper [Empowering First-Year Computer Science Ph.D. Students to Create a Culture that Values Community and Mental Health (Yacoby et al. 2023)](https://arxiv.org/pdf/2208.12650.pdf).
 - Washington's [_Tao of PhD_](https://courses.cs.washington.edu/courses/cse590x/22wi/resources/)
-- Berkeley's [_Research Culture And Community Norms_](https://inst.eecs.berkeley.edu/~cs298-7/fa20/lectures/)
 
 ## Keeping up with the field
 

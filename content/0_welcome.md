@@ -1,9 +1,9 @@
 +++
-title = "Your health, wellness, and finances"
-date = 2023-09-11
+title = "Welcome, administrivia, and your health, wellness, and finances"
+date = 2026-08-24
 description = ""
 [extra]
-prettydate = "September 11"
+prettydate = "August 24"
 presenter = "Anshuman Mohan"
 link_to_page = "yes"
 +++
@@ -18,7 +18,7 @@ This session approaches the hidden curriculum through a wellness lens. Our physi
 
 ## Healthcare
 
-- Know your health benefits: [Student Health Benefits Enrollment & Coverage](https://studenthealthbenefits.cornell.edu/enrollment-coverage)
+- Know your health benefits: [Student Health Benefits Enrollment & Coverage](https://studenthealthbenefits.cornell.edu/get-health-insurance/student-health-plan-shp-insurance/shp-enrollment-coverage)
 - [Mental Health Care at Cornell (Ithaca)](https://health.cornell.edu/services/mental-health-care)
 - [Mental Health Care at Cornell Tech (NYC)](https://studentaffairs.tech.cornell.edu/health-wellness/nyc-health-resources/)
 

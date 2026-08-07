@@ -1,10 +1,10 @@
 +++
-title = "Preparing a strong fellowship application"
-date = 2023-09-25
+title = "Applying for fellowships"
+date = 2026-09-21
 description = ""
 [extra]
-prettydate = "September 25"
-presenter = "Farhana Shahid and Jacqueline Maasch"
+prettydate = "September 21"
+presenter = "Eva Tardos"
 link_to_page = "yes"
 +++
 

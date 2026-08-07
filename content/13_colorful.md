@@ -1,8 +1,8 @@
 +++
-title = "Bobby's very colorful PhD"
-date = 2023-12-04
+title = "Resilience, and Bobby's very colorful PhD"
+date = 2026-12-07
 description = ""
 [extra]
-prettydate = "December 4"
+prettydate = "December 7"
 presenter = "Robert Kleinberg"
 +++
