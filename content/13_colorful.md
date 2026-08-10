@@ -1,5 +1,5 @@
 +++
-title = "Resilience, and Bobby's very colorful PhD"
+title = "Bobby's Very Colorful PhD"
 date = 2026-12-07
 description = ""
 [extra]

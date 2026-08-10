@@ -1,5 +1,5 @@
 +++
-title = "Senior-grad AMA"
+title = "Senior-Grad AMA"
 date = 2026-08-31
 description = ""
 [extra]

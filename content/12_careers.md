@@ -1,5 +1,5 @@
 +++
-title = "Possible careers with a PhD"
+title = "Possible Careers with a PhD"
 date = 2026-11-30
 description = ""
 [extra]

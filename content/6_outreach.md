@@ -1,5 +1,5 @@
 +++
-title = "Mentorship, undergraduates, and outreach"
+title = "Mentorship, Undergraduates, and Outreach"
 date = 2026-10-19
 description = ""
 [extra]

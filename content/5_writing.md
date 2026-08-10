@@ -1,5 +1,5 @@
 +++
-title = "Writing a paper"
+title = "Writing a Paper"
 date = 2026-10-05
 description = ""
 [extra]

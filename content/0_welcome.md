@@ -1,5 +1,5 @@
 +++
-title = "Welcome, administrivia, and your health, wellness, and finances"
+title = "Your Health, Wellness, and Finances"
 date = 2026-08-24
 description = ""
 [extra]

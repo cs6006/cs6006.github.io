@@ -1,5 +1,5 @@
 +++
-title = "Building a support network"
+title = "Building a Support Network"
 date = 2026-11-23
 description = ""
 [extra]

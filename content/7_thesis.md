@@ -1,5 +1,5 @@
 +++
-title = "Deciding your thesis topic"
+title = "Deciding Your Thesis Topic"
 date = 2026-10-26
 description = ""
 [extra]

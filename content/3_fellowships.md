@@ -1,5 +1,5 @@
 +++
-title = "Applying for fellowships"
+title = "Applying for Fellowships"
 date = 2026-09-21
 description = ""
 [extra]
