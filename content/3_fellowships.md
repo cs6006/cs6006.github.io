@@ -5,7 +5,6 @@ description = ""
 [extra]
 prettydate = "September 21"
 presenter = "Eva Tardos"
-link_to_page = "yes"
 +++
 
 ## Internal resources
