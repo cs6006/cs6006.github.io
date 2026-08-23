@@ -69,6 +69,23 @@ Sadly, actually taking time off tends to come down to a discussion with your adv
 
 
 
+## Picking up something new
+
+- A PhD is long, and that turns out to be an asset. Six years is more than enough time to get genuinely good at something that has nothing to do with your research. Before you know it, you're a pretty solid baker.
+- Cornell makes this easier than most places. [PE and Cornell Outdoor Education classes](https://scl.cornell.edu/coe/pe-courses/enrollment-policies) are open to us on the same terms as undergraduates, once undergraduate pre-enrollment closes, and COE runs some wellness courses aimed specifically at graduate students. Climbing, sailing, wilderness first aid, and so on.
+- It does not have to involve Cornell at all. A language, an instrument, a bike, a woodworking bench. What matters is that nobody is evaluating you. That is the whole point of it.
+- The [Big Red Barn](https://scl.cornell.edu/big-red-barn) is the graduate and professional student center, and is a reliable place to find people who are also looking for something to do.
+
+## Make a winter plan
+
+- This applies at both campuses. Ithaca's winter is long, grey, and genuinely dark by mid-afternoon. New York's is shorter, but it's just as easy to spend three months going from your apartment to the lab and back.
+- Make the plan in September. By January, when it's dark at 4:30pm, you will not have the energy to invent one.
+- A decent plan has three parts: something that gets you outside, something indoors and social, and one standing weekly commitment involving other people.
+- Gear is the boring half, and people skip it. Real boots and a real coat, bought before November, change how the season feels. This is worth spending money on.
+- In Ithaca, the winter is beautiful if you are equipped for it: the gorges freeze, there is skiing and skating within a short drive, and COE runs winter trips.
+- In New York, the wind on Roosevelt Island is its own event. The city's parks and recreation centers offer cheap memberships, and the indoor options are, of course, endless.
+- Get daylight when you can, even briefly, and especially early. If your mood drops predictably every winter, that is seasonal affective disorder, it is common, and it is treatable. Talk to Cornell Health about light therapy well before you are in the thick of it.
+
 ## Food security
 
 Stipends and rents, in Ithaca or in the city, don't always cooperate. Plenty of students use these resources, and the ones on campus are confidential.
