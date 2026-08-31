@@ -129,7 +129,7 @@
       {{ page.title }}
       {% endif %}
     </span> <br>
-    {% if page.extra.presenter %}<em> {{ page.extra.presenter }} </em>{% endif %}
+    {% if page.extra.presenter %}<em> {{ page.extra.presenter | safe }} </em>{% endif %}
     {% if page.extra.note %}<br><span class="muted note"> {{ page.extra.note }} </span>{% endif %}
   </div>
 
