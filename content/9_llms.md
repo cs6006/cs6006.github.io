@@ -4,5 +4,5 @@ date = 2026-11-09
 description = ""
 [extra]
 prettydate = "November 9"
-presenter = "Jon Kleinberg"
+presenter = "<a href=\"https://www.cs.cornell.edu/home/kleinber/\">Jon Kleinberg</a>"
 +++

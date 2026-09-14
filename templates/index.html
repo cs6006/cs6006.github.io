@@ -125,6 +125,8 @@
     <span class="subheading{% if page.extra.tentative %} muted{% endif %}" id="{{ page.slug }}">
       {% if page.extra.link_to_page %}
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      {% elif page.extra.slides %}
+      <a href="{{ get_url(path=page.extra.slides) }}">{{ page.title }}</a>
       {% else %}
       {{ page.title }}
       {% endif %}
