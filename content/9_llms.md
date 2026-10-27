@@ -5,4 +5,5 @@ description = ""
 [extra]
 prettydate = "November 9"
 presenter = "<a href=\"https://www.cs.cornell.edu/home/kleinber/\">Jon Kleinberg</a>"
+open = true
 +++

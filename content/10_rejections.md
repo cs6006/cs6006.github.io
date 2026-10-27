@@ -5,4 +5,5 @@ description = ""
 [extra]
 prettydate = "November 16"
 presenter = "<a href=\"https://www.racheesingh.com/\">Rachee Singh</a>"
+open = true
 +++

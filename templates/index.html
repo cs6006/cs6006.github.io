@@ -52,6 +52,16 @@
   </div>
 
   <div class="info subheading">
+    <p>Open sessions</p>
+  </div>
+
+  <div>
+    <p> Some of our sessions are open to the wider Cornell community over Zoom. They are
+      marked below. First-year students: please come in person to your room as usual.
+      Everyone else: please come to <a href="https://cornell.zoom.us/j/96821746710?pwd=R7c69fP4aTopDhtDdcNbpcshAmb8U2.1">this Zoom room</a>. </p>
+  </div>
+
+  <div class="info subheading">
     <p>Office Hours</p>
   </div>
 
@@ -130,9 +140,10 @@
       {% else %}
       {{ page.title }}
       {% endif %}
+      {% if page.extra.open %}<span class="opentag">Open</span>{% endif %}
     </span> <br>
     {% if page.extra.presenter %}<em> {{ page.extra.presenter | safe }} </em>{% endif %}
-    {% if page.extra.note %}<br><span class="muted note"> {{ page.extra.note }} </span>{% endif %}
+    {% if page.extra.note %}<br><span class="muted note"> {{ page.extra.note | safe }} </span>{% endif %}
   </div>
 
 
